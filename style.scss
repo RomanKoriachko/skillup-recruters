@@ -3,11 +3,11 @@
 
 @mixin mainButton() {
     width: 380px;
-    height: 50px;
+    min-height: 50px;
     background: #4ebd09;
     border-radius: 6px;
     border: none;
-    padding: 0px 12px;
+    padding: 5px 12px;
     cursor: pointer;
     @include fonts.b1();
     transition: 0.3s all;
@@ -39,7 +39,20 @@ body {
         @include fonts.h2();
         margin-top: 104px;
         margin-bottom: 48px;
-        text-align: center;
+        // text-align: center;
+    }
+    .mobile-registration-btn-wrapper {
+        position: fixed;
+        width: 100%;
+        background: #0d1a30;
+        bottom: 0px;
+        z-index: 100;
+        display: none;
+        padding: 15px 16px;
+        > button {
+            @include mainButton();
+            width: 100%;
+        }
     }
     .br {
         display: none;
@@ -86,9 +99,17 @@ body {
                 color: #0d1a30;
             }
             .introduce-img {
+                .introduce-text-wrapper {
+                    background-color: #4ebd09;
+                    border-radius: 8px;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                }
                 .introduce-content-subtitle {
                     margin-bottom: 20px;
                     text-align: center;
+                    color: #0d1a30;
+                    margin-bottom: 0;
                 }
                 > img {
                     width: 480px;
@@ -118,9 +139,6 @@ body {
         }
     }
     .who-is-section {
-        .who-is-header {
-            text-align: center;
-        }
         .who-is-wrapper {
             gap: 32px;
             .who-is-text {
@@ -209,9 +227,6 @@ body {
     }
     .how-to-know-section {
         padding-bottom: 104px;
-        .how-to-know-header {
-            text-align: center;
-        }
         .how-to-know-wrapper {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -235,8 +250,15 @@ body {
         text-align: center;
         @include fonts.h2();
         padding: 48px 0px;
+        .start-in-it-btn {
+            @include mainButton();
+            margin-top: 48px;
+        }
     }
     .video-section {
+        .video-section-header {
+            text-align: center;
+        }
         .video {
             width: 50%;
             height: 354px;
@@ -268,7 +290,7 @@ body {
         background: #0d1a30;
         padding-top: 50px;
         padding-bottom: 100px;
-        text-align: center;
+        // text-align: center;
         overflow: hidden;
         .companies-section-header {
             @include fonts.h2();
@@ -488,6 +510,11 @@ body {
                     @include fonts.p2();
                     color: #4ebd09;
                 }
+                .form-section-text-hide-tablet {
+                    span {
+                        color: #4ebd09;
+                    }
+                }
             }
             .form {
                 width: 50%;
@@ -507,8 +534,9 @@ body {
                         @include fonts.t2();
                         border: 1px solid #0d1a30;
                         border-radius: 6px;
-                        padding: 13px 16px;
+                        padding: 13px 50px;
                         caret-color: #4ebd09;
+                        width: 100%;
                         &:focus {
                             outline-color: #4ebd09;
                         }
@@ -529,6 +557,9 @@ body {
         padding-bottom: 48px;
         text-align: center;
         overflow: hidden;
+        .review-section-header {
+            text-align: left;
+        }
         .slider-text {
             .slider-item {
                 margin-right: 34px;
@@ -885,6 +916,18 @@ body {
 // Mobile
 @media (max-width: 576px) {
     .main {
+        .mobile-registration-btn-wrapper {
+            display: block;
+            transition: all 0.3s;
+        }
+        .mobile-registration-btn-wrapper.show {
+            visibility: visible;
+            opacity: 1;
+        }
+        .mobile-registration-btn-wrapper.hide {
+            visibility: hidden;
+            opacity: 0;
+        }
         .introduce-section {
             padding-top: 24px;
             .logo {
@@ -966,6 +1009,9 @@ body {
             text-align: left;
             p:first-child {
                 margin-bottom: 16px;
+            }
+            .start-in-it-btn {
+                width: 100%;
             }
         }
         .video-section {

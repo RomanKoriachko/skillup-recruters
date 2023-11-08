@@ -73,7 +73,35 @@ body {
   line-height: 48px;
   margin-top: 104px;
   margin-bottom: 48px;
-  text-align: center;
+}
+.main .mobile-registration-btn-wrapper {
+  position: fixed;
+  width: 100%;
+  background: #0d1a30;
+  bottom: 0px;
+  z-index: 100;
+  display: none;
+  padding: 15px 16px;
+}
+.main .mobile-registration-btn-wrapper > button {
+  width: 380px;
+  min-height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  width: 100%;
+}
+.main .mobile-registration-btn-wrapper > button:hover {
+  transform: translateY(10%);
 }
 .main .br {
   display: none;
@@ -125,11 +153,11 @@ body {
 }
 .main .introduce-section .introduce-wrapper button {
   width: 380px;
-  height: 50px;
+  min-height: 50px;
   background: #4ebd09;
   border-radius: 6px;
   border: none;
-  padding: 0px 12px;
+  padding: 5px 12px;
   cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
@@ -143,9 +171,17 @@ body {
 .main .introduce-section .introduce-wrapper button:hover {
   transform: translateY(10%);
 }
+.main .introduce-section .introduce-wrapper .introduce-img .introduce-text-wrapper {
+  background-color: #4ebd09;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
 .main .introduce-section .introduce-wrapper .introduce-img .introduce-content-subtitle {
   margin-bottom: 20px;
   text-align: center;
+  color: #0d1a30;
+  margin-bottom: 0;
 }
 .main .introduce-section .introduce-wrapper .introduce-img > img {
   width: 480px;
@@ -174,9 +210,6 @@ body {
   font-size: 18px;
   line-height: 24px;
   text-align: left;
-}
-.main .who-is-section .who-is-header {
-  text-align: center;
 }
 .main .who-is-section .who-is-wrapper {
   gap: 32px;
@@ -266,11 +299,11 @@ body {
 }
 .main .who-is-section .who-is-tablet-btn {
   width: 380px;
-  height: 50px;
+  min-height: 50px;
   background: #4ebd09;
   border-radius: 6px;
   border: none;
-  padding: 0px 12px;
+  padding: 5px 12px;
   cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
@@ -286,9 +319,6 @@ body {
 }
 .main .how-to-know-section {
   padding-bottom: 104px;
-}
-.main .how-to-know-section .how-to-know-header {
-  text-align: center;
 }
 .main .how-to-know-section .how-to-know-wrapper {
   display: grid;
@@ -316,6 +346,29 @@ body {
   font-size: 36px;
   line-height: 48px;
   padding: 48px 0px;
+}
+.main .start-in-it .start-in-it-btn {
+  width: 380px;
+  min-height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  margin-top: 48px;
+}
+.main .start-in-it .start-in-it-btn:hover {
+  transform: translateY(10%);
+}
+.main .video-section .video-section-header {
+  text-align: center;
 }
 .main .video-section .video {
   width: 50%;
@@ -351,7 +404,6 @@ body {
   background: #0d1a30;
   padding-top: 50px;
   padding-bottom: 100px;
-  text-align: center;
   overflow: hidden;
 }
 .main .companies-section .companies-section-header {
@@ -571,11 +623,11 @@ body {
 }
 .main .sign-up-section button {
   width: 380px;
-  height: 50px;
+  min-height: 50px;
   background: #4ebd09;
   border-radius: 6px;
   border: none;
-  padding: 0px 12px;
+  padding: 5px 12px;
   cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
@@ -644,6 +696,9 @@ body {
   line-height: 32px;
   color: #4ebd09;
 }
+.main .form-section .form-section-wrapper .form-section-text .form-section-text-hide-tablet span {
+  color: #4ebd09;
+}
 .main .form-section .form-section-wrapper .form {
   width: 50%;
   background: #ffffff;
@@ -670,8 +725,9 @@ body {
   line-height: 24px;
   border: 1px solid #0d1a30;
   border-radius: 6px;
-  padding: 13px 16px;
+  padding: 13px 50px;
   caret-color: #4ebd09;
+  width: 100%;
 }
 .main .form-section .form-section-wrapper .form .form-input input:focus {
   outline-color: #4ebd09;
@@ -681,11 +737,11 @@ body {
 }
 .main .form-section .form-section-wrapper .form button {
   width: 380px;
-  height: 50px;
+  min-height: 50px;
   background: #4ebd09;
   border-radius: 6px;
   border: none;
-  padding: 0px 12px;
+  padding: 5px 12px;
   cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
@@ -704,6 +760,9 @@ body {
   padding-bottom: 48px;
   text-align: center;
   overflow: hidden;
+}
+.main .review-section .review-section-header {
+  text-align: left;
 }
 .main .review-section .slider-text .slider-item {
   margin-right: 34px;
@@ -795,11 +854,11 @@ body {
 .main .review-section .review-section-btn {
   margin-top: 48px;
   width: 380px;
-  height: 50px;
+  min-height: 50px;
   background: #4ebd09;
   border-radius: 6px;
   border: none;
-  padding: 0px 12px;
+  padding: 5px 12px;
   cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
@@ -830,11 +889,11 @@ body {
 }
 .footer .footer-btn {
   width: 380px;
-  height: 50px;
+  min-height: 50px;
   background: #4ebd09;
   border-radius: 6px;
   border: none;
-  padding: 0px 12px;
+  padding: 5px 12px;
   cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
@@ -1059,6 +1118,18 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .main .mobile-registration-btn-wrapper {
+    display: block;
+    transition: all 0.3s;
+  }
+  .main .mobile-registration-btn-wrapper.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  .main .mobile-registration-btn-wrapper.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
   .main .introduce-section {
     padding-top: 24px;
   }
@@ -1139,6 +1210,9 @@ body {
   }
   .main .start-in-it p:first-child {
     margin-bottom: 16px;
+  }
+  .main .start-in-it .start-in-it-btn {
+    width: 100%;
   }
   .main .video-section .video {
     height: 230px;
