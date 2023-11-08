@@ -805,6 +805,9 @@ body {
             }
         }
         .video-section {
+            .video-section-header {
+                text-align: left;
+            }
             .video-section-wrapper {
                 flex-direction: column;
                 gap: 24px;

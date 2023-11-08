@@ -1026,6 +1026,9 @@ body {
   .main .how-to-know-section .how-to-know-wrapper {
     grid-template-columns: 1fr;
   }
+  .main .video-section .video-section-header {
+    text-align: left;
+  }
   .main .video-section .video-section-wrapper {
     flex-direction: column;
     gap: 24px;
