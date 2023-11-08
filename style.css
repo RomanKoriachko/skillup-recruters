@@ -150,31 +150,30 @@ body {
 .main .introduce-section .introduce-wrapper .introduce-img > img {
   width: 480px;
 }
-.main .benefit-section {
-  text-align: center;
-}
 .main .benefit-section .benefit-wrapper {
   gap: 24px;
 }
 .main .benefit-section .benefit-wrapper .benefit-item {
   width: 410px;
   padding: 0px 16px;
+  text-align: center;
 }
 .main .benefit-section .benefit-wrapper .benefit-item > img {
   margin-bottom: 12px;
 }
-.main .benefit-section .benefit-wrapper .benefit-item > p:nth-child(2) {
+.main .benefit-section .benefit-wrapper .benefit-item .benefit-item-title {
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 25px;
 }
-.main .benefit-section .benefit-wrapper .benefit-item > p:nth-child(3) {
+.main .benefit-section .benefit-wrapper .benefit-item .benefit-item-subtitle {
   font-family: "Exo 2";
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+  text-align: left;
 }
 .main .who-is-section .who-is-header {
   text-align: center;
@@ -232,6 +231,7 @@ body {
   border-radius: 6px;
   background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
   margin-bottom: 24px;
+  overflow: hidden;
 }
 .main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children {
   position: absolute;
@@ -240,22 +240,13 @@ body {
   border-radius: 6px;
   transition: 1s all;
 }
-.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-1.hide {
-  width: 0%;
-}
-.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-1.show {
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-1 {
   width: 22%;
 }
-.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-2.hide {
-  width: 0%;
-}
-.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-2.show {
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-2 {
   width: 68%;
 }
-.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-3.hide {
-  width: 0%;
-}
-.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-3.show {
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-3 {
   width: 100%;
 }
 .main .who-is-section .who-is-wrapper .who-is-tablet-content {
@@ -266,7 +257,12 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 400;
   margin-bottom: 24px;
+  margin-top: 48px;
+  border-radius: 8px;
+  padding: 20px 10px;
+  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
 }
 .main .who-is-section .who-is-tablet-btn {
   width: 380px;
@@ -904,6 +900,7 @@ body {
     line-height: 130%;
     margin-top: 72px;
     margin-bottom: 32px;
+    text-align: left;
   }
   .main .br {
     display: block;
@@ -1079,6 +1076,7 @@ body {
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-title {
     font-size: 34px;
+    margin-top: 16px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
     font-family: "Exo 2";
@@ -1107,6 +1105,9 @@ body {
   .main .benefit-section .benefit-wrapper .benefit-item {
     width: 100%;
   }
+  .main .who-is-section .who-is-header {
+    text-align: left;
+  }
   .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
     margin-bottom: 32px;
   }
@@ -1126,11 +1127,18 @@ body {
     font-size: 16px;
     line-height: 24px;
   }
+  .main .how-to-know-section .how-to-know-header {
+    text-align: left;
+  }
   .main .start-in-it {
     font-family: "Exo 2";
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
+    text-align: left;
+  }
+  .main .start-in-it p:first-child {
+    margin-bottom: 16px;
   }
   .main .video-section .video {
     height: 230px;
@@ -1146,6 +1154,7 @@ body {
   }
   .main .companies-section .companies-section-header {
     margin-bottom: 48px;
+    text-align: left;
   }
   .main .companies-section .companies-slider .companies-section-item {
     width: 160px;
