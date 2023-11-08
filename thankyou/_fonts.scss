@@ -1,0 +1,189 @@
+@mixin h1() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+}
+@mixin h2() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+@mixin h3() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 145%;
+}
+@mixin h4() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+@mixin h5() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+@mixin h6() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 145%;
+}
+@mixin h7() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin t1() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+@mixin t2() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+@mixin t3() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+@mixin t4() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin t5() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin t6() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+}
+@mixin b1() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+// Mobile 
+
+@mixin mobileH1() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+@mixin mobileH2() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+}
+@mixin mobileH3() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+@mixin mobileH4() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 145%;
+}
+@mixin mobileH5() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin mobileH6() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 145%;
+}
+@mixin mobileH7() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin mobileT1() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin mobileT2() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 145%;
+}
+@mixin mobileT3() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin mobileT4() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+}
+@mixin mobileT5() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin mobileT6() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+}
+@mixin mobileT7() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin mobileT8() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+@mixin mobileT9() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+}
+@mixin mobileB1() {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}

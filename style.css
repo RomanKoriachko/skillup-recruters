@@ -1,0 +1,1207 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+.row {
+  display: flex;
+}
+
+body {
+  color: #0d1a30;
+}
+
+.main .h2-header {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 104px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.main .br {
+  display: none;
+}
+.main .introduce-section {
+  background: #0d1a30;
+  color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 65px;
+}
+.main .introduce-section .logo {
+  margin-bottom: 64px;
+}
+.main .introduce-section .logo > img {
+  height: 80px;
+}
+.main .introduce-section .introduce-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  justify-content: space-between;
+  gap: 42px;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-subtitle {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-title {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 124%;
+  margin-bottom: 48px;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-title > span {
+  white-space: nowrap;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-green-text {
+  color: #4ebd09;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-places {
+  margin-bottom: 48px;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-tablet {
+  display: none;
+}
+.main .introduce-section .introduce-wrapper button {
+  width: 380px;
+  height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  color: #0d1a30;
+}
+.main .introduce-section .introduce-wrapper button:hover {
+  transform: translateY(10%);
+}
+.main .introduce-section .introduce-wrapper .introduce-img .introduce-content-subtitle {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main .introduce-section .introduce-wrapper .introduce-img > img {
+  width: 480px;
+}
+.main .benefit-section {
+  text-align: center;
+}
+.main .benefit-section .benefit-wrapper {
+  gap: 24px;
+}
+.main .benefit-section .benefit-wrapper .benefit-item {
+  width: 410px;
+  padding: 0px 16px;
+}
+.main .benefit-section .benefit-wrapper .benefit-item > img {
+  margin-bottom: 12px;
+}
+.main .benefit-section .benefit-wrapper .benefit-item > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.main .benefit-section .benefit-wrapper .benefit-item > p:nth-child(3) {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .who-is-section .who-is-header {
+  text-align: center;
+}
+.main .who-is-section .who-is-wrapper {
+  gap: 32px;
+}
+.main .who-is-section .who-is-wrapper .who-is-text {
+  width: 50%;
+}
+.main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales {
+  width: 50%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-row {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-row .scale-text > p:nth-child(1) {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-row .scale-text > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-row .scale-salary {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  border-radius: 6px;
+  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+  margin-bottom: 24px;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children {
+  position: absolute;
+  height: 100%;
+  background: #4ebd09;
+  border-radius: 6px;
+  transition: 1s all;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-1.hide {
+  width: 0%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-1.show {
+  width: 22%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-2.hide {
+  width: 0%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-2.show {
+  width: 68%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-3.hide {
+  width: 0%;
+}
+.main .who-is-section .who-is-wrapper .who-is-scales .scale-item .scale-parent .scale-children-3.show {
+  width: 100%;
+}
+.main .who-is-section .who-is-wrapper .who-is-tablet-content {
+  display: none;
+}
+.main .who-is-section .who-is-tablet-text {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.main .who-is-section .who-is-tablet-btn {
+  width: 380px;
+  height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  color: #ffffff;
+}
+.main .who-is-section .who-is-tablet-btn:hover {
+  transform: translateY(10%);
+}
+.main .how-to-know-section {
+  padding-bottom: 104px;
+}
+.main .how-to-know-section .how-to-know-header {
+  text-align: center;
+}
+.main .how-to-know-section .how-to-know-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.main .how-to-know-section .how-to-know-wrapper .how-to-know-item .how-to-know-text {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .check-img {
+  min-width: 24px;
+  height: 24px;
+  background-image: url(images/check-circle.svg);
+  margin-right: 8px;
+}
+.main .start-in-it {
+  background: #0d1a30;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  padding: 48px 0px;
+}
+.main .video-section .video {
+  width: 50%;
+  height: 354px;
+  background: #8090ab;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+.main .video-section .video .video-youtube {
+  border-radius: 12px;
+}
+.main .video-section .video-section-wrapper {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  text-align: center;
+}
+.main .video-section .video-section-text {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main .video-section .video-section-text .video-section-item {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.main .companies-section {
+  color: white;
+  background: #0d1a30;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+.main .companies-section .companies-section-header {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+.main .companies-section .companies-slider .companies-section-item,
+.main .companies-section .companies-tablet-slider .companies-section-item {
+  width: 184px;
+  height: 184px;
+  border: 4px solid #333142;
+  border-radius: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  margin-right: 17px;
+}
+.main .companies-section .companies-slider .company-1,
+.main .companies-section .companies-tablet-slider .company-1 {
+  background-image: url(images/companies-logo-1.svg);
+}
+.main .companies-section .companies-slider .company-2,
+.main .companies-section .companies-tablet-slider .company-2 {
+  background-image: url(images/companies-logo-2.svg);
+}
+.main .companies-section .companies-slider .company-3,
+.main .companies-section .companies-tablet-slider .company-3 {
+  background-image: url(images/companies-logo-3.svg);
+}
+.main .companies-section .companies-slider .company-4,
+.main .companies-section .companies-tablet-slider .company-4 {
+  background-image: url(images/companies-logo-4.svg);
+}
+.main .companies-section .companies-slider .company-5,
+.main .companies-section .companies-tablet-slider .company-5 {
+  background-image: url(images/companies-logo-5.svg);
+}
+.main .companies-section .companies-slider .company-6,
+.main .companies-section .companies-tablet-slider .company-6 {
+  background-image: url(images/companies-logo-6.svg);
+}
+.main .companies-section .companies-slider .company-7,
+.main .companies-section .companies-tablet-slider .company-7 {
+  background-image: url(images/companies-logo-7.svg);
+}
+.main .companies-section .companies-slider .company-8,
+.main .companies-section .companies-tablet-slider .company-8 {
+  background-image: url(images/companies-logo-8.svg);
+}
+.main .companies-section .companies-slider .company-9,
+.main .companies-section .companies-tablet-slider .company-9 {
+  background-image: url(images/companies-logo-9.svg);
+}
+.main .companies-section .companies-slider .company-10,
+.main .companies-section .companies-tablet-slider .company-10 {
+  background-image: url(images/companies-logo-10.svg);
+}
+.main .companies-section .companies-slider .company-11,
+.main .companies-section .companies-tablet-slider .company-11 {
+  background-image: url(images/companies-logo-11.svg);
+}
+.main .companies-section .companies-slider .company-12,
+.main .companies-section .companies-tablet-slider .company-12 {
+  background-image: url(images/companies-logo-12.svg);
+}
+.main .companies-section .companies-slider .company-13,
+.main .companies-section .companies-tablet-slider .company-13 {
+  background-image: url(images/companies-logo-13.svg);
+}
+.main .companies-section .companies-slider .company-14,
+.main .companies-section .companies-tablet-slider .company-14 {
+  background-image: url(images/companies-logo-14.svg);
+}
+.main .companies-section .companies-slider .company-15,
+.main .companies-section .companies-tablet-slider .company-15 {
+  background-image: url(images/companies-logo-15.svg);
+}
+.main .companies-section .companies-slider .company-16,
+.main .companies-section .companies-tablet-slider .company-16 {
+  background-image: url(images/companies-logo-16.svg);
+}
+.main .companies-section .companies-slider .company-17,
+.main .companies-section .companies-tablet-slider .company-17 {
+  background-image: url(images/companies-logo-17.svg);
+}
+.main .companies-section .companies-slider .company-18,
+.main .companies-section .companies-tablet-slider .company-18 {
+  background-image: url(images/companies-logo-18.svg);
+}
+.main .companies-section .companies-slider .company-19,
+.main .companies-section .companies-tablet-slider .company-19 {
+  background-image: url(images/companies-logo-19.svg);
+}
+.main .companies-section .companies-slider .company-20,
+.main .companies-section .companies-tablet-slider .company-20 {
+  background-image: url(images/companies-logo-20.svg);
+}
+.main .companies-section .companies-slider .company-21,
+.main .companies-section .companies-tablet-slider .company-21 {
+  background-image: url(images/companies-logo-21.svg);
+}
+.main .companies-section .companies-slider .company-22,
+.main .companies-section .companies-tablet-slider .company-22 {
+  background-image: url(images/companies-logo-22.svg);
+}
+.main .companies-section .companies-slider .company-23,
+.main .companies-section .companies-tablet-slider .company-23 {
+  background-image: url(images/companies-logo-23.svg);
+}
+.main .companies-section .companies-slider .company-24,
+.main .companies-section .companies-tablet-slider .company-24 {
+  background-image: url(images/companies-logo-24.svg);
+}
+.main .companies-section .companies-slider .company-25,
+.main .companies-section .companies-tablet-slider .company-25 {
+  background-image: url(images/companies-logo-25.svg);
+}
+.main .companies-section .companies-slider .company-26,
+.main .companies-section .companies-tablet-slider .company-26 {
+  background-image: url(images/companies-logo-26.svg);
+}
+.main .companies-section .companies-slider .company-27,
+.main .companies-section .companies-tablet-slider .company-27 {
+  background-image: url(images/companies-logo-27.svg);
+}
+.main .companies-section .companies-slider .company-28,
+.main .companies-section .companies-tablet-slider .company-28 {
+  background-image: url(images/companies-logo-28.svg);
+}
+.main .companies-section .companies-slider .company-29,
+.main .companies-section .companies-tablet-slider .company-29 {
+  background-image: url(images/companies-logo-29.svg);
+}
+.main .companies-section .companies-slider .company-30,
+.main .companies-section .companies-tablet-slider .company-30 {
+  background-image: url(images/companies-logo-30.svg);
+}
+.main .companies-section .companies-tablet-slider {
+  display: none;
+}
+.main .numbers-section {
+  padding-bottom: 104px;
+}
+.main .numbers-section .numbers-header {
+  margin-left: 170px;
+  margin-right: 170px;
+}
+.main .numbers-section .numbers-row {
+  margin-bottom: 32px;
+}
+.main .numbers-section .numbers-row .numbers-item {
+  text-align: center;
+  width: 330px;
+}
+.main .numbers-section .numbers-row .numbers-item > p:nth-child(1) {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 124%;
+  color: #4ebd09;
+}
+.main .numbers-section .numbers-row .numbers-item > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+}
+.main .numbers-section .numbers-comparison {
+  padding: 48px 38px;
+  background: linear-gradient(126.48deg, #ffe2d0 -25%, #fcf9e8 41.69%);
+  border-radius: 12px;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item {
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item > div {
+  margin: 22px 0px;
+  width: 25%;
+  text-align: center;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-comparison-text1 {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-comparsion-long-text {
+  margin: 10px 0px;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-comparison-text2 {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-check-img {
+  background-image: url(images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item .numbers-x-img {
+  background-image: url(images/x.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .numbers-section .numbers-comparison .numbers-comparison-item:first-child {
+  border: none;
+}
+.main .sign-up-section {
+  padding: 48px 0px;
+  text-align: center;
+  background: #0d1a30;
+}
+.main .sign-up-section button {
+  width: 380px;
+  height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  color: #0d1a30;
+}
+.main .sign-up-section button:hover {
+  transform: translateY(10%);
+}
+.main .benefits-section {
+  padding-bottom: 104px;
+}
+.main .benefits-section .benefits-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.main .benefits-section .benefits-wrapper .benefits-item {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .benefits-section .benefits-footer {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 32px;
+}
+.main .form-section {
+  background: #0d1a30;
+  color: #ffffff;
+  padding: 48px 0px;
+}
+.main .form-section .form-section-wrapper {
+  align-items: center;
+  gap: 32px;
+}
+.main .form-section .form-section-wrapper .form-section-text {
+  width: 50%;
+}
+.main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+.main .form-section .form-section-wrapper .form-section-text > p:nth-child(2) {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.main .form-section .form-section-wrapper .form-section-text > p:nth-child(3) {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #4ebd09;
+}
+.main .form-section .form-section-wrapper .form {
+  width: 50%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  color: #0d1a30;
+}
+.main .form-section .form-section-wrapper .form .form-input {
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  transition: 0.3s all;
+}
+.main .form-section .form-section-wrapper .form .form-input label {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main .form-section .form-section-wrapper .form .form-input input {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #0d1a30;
+  border-radius: 6px;
+  padding: 13px 16px;
+  caret-color: #4ebd09;
+}
+.main .form-section .form-section-wrapper .form .form-input input:focus {
+  outline-color: #4ebd09;
+}
+.main .form-section .form-section-wrapper .form .form-input:focus-within {
+  color: #4ebd09;
+}
+.main .form-section .form-section-wrapper .form button {
+  width: 380px;
+  height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  margin-top: 24px;
+  color: #ffffff;
+}
+.main .form-section .form-section-wrapper .form button:hover {
+  transform: translateY(10%);
+}
+.main .review-section {
+  padding-bottom: 48px;
+  text-align: center;
+  overflow: hidden;
+}
+.main .review-section .slider-text .slider-item {
+  margin-right: 34px;
+}
+.main .review-section .slider-text .slider-item .review-text-author {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .review-section .slider-text .slider-item .review-text-position {
+  text-align: left;
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main .review-section .slider-text .slider-item .video-wrapper .video {
+  width: 410px;
+  height: 224px;
+  background: #8090ab;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.main .review-section .slider-text .slider-item .video-wrapper .video .video-review {
+  border-radius: 8px;
+}
+.main .review-section .slider-text .slider-item .review-wrapper {
+  gap: 24px;
+  width: 410px;
+  margin-top: 48px;
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar {
+  min-width: 85px;
+  height: 85px;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50px;
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-1 {
+  background-image: url(images/user-avatar-1.jpg);
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-2 {
+  background-image: url(images/user-avatar-2.jpg);
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-3 {
+  background-image: url(images/user-avatar-3.jpg);
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-4 {
+  background-image: url(images/user-avatar-4.jpg);
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-5 {
+  background-image: url(images/user-avatar-5.jpg);
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-6 {
+  background-image: url(images/user-avatar-6.jpg);
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-7 {
+  background-image: url(images/user-avatar-7.jpg);
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-text {
+  text-align: left;
+}
+.main .review-section .slider-text .slider-item .review-wrapper .review-text > p {
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+  margin-bottom: 16px;
+}
+.main .review-section .slider-text .slider-item .fb-icon {
+  min-width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-image: url(images/facebook.svg);
+  transition: 0.3s all;
+}
+.main .review-section .slider-text .slider-item .fb-icon:hover {
+  transform: scale(1.2);
+}
+.main .review-section .slider-text .slick-dots {
+  bottom: -45px;
+}
+.main .review-section .author-and-fb-wrapper {
+  margin-top: 15px;
+  align-items: center;
+  gap: 10px;
+}
+.main .review-section .review-section-btn {
+  margin-top: 48px;
+  width: 380px;
+  height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  color: white;
+}
+.main .review-section .review-section-btn:hover {
+  transform: translateY(10%);
+}
+
+.footer {
+  padding: 48px 0px;
+  background: #0d1a30;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .footer-wrapper {
+  justify-content: space-around;
+  font-family: "Exo 2";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+  margin-bottom: 32px;
+}
+.footer .footer-btn {
+  width: 380px;
+  height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  margin-bottom: 32px;
+}
+.footer .footer-btn:hover {
+  transform: translateY(10%);
+}
+.footer .footer-buttons button {
+  width: 26px;
+  height: 26px;
+  border: none;
+  margin-right: 12px;
+  cursor: pointer;
+  background: transparent;
+  background-size: cover;
+  transition: 0.3s all;
+}
+.footer .footer-buttons button:hover {
+  transform: scale(1.2);
+}
+.footer .footer-buttons .facebook-btn {
+  background-image: url(images/facebook.svg);
+}
+.footer .footer-buttons .linkedin-btn {
+  background-image: url(images/linkedin.svg);
+}
+.footer .footer-buttons .instargam-btn {
+  background-image: url(images/Instagram.svg);
+}
+.footer .footer-buttons .youtube-btn {
+  background-image: url(images/Youtube.svg);
+}
+
+@media (max-width: 1200px) {
+  .main .introduce-section .logo {
+    margin-bottom: 30px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content-title {
+    font-size: 52px;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-item {
+    padding: 0px 5px;
+  }
+  .main .numbers-section .numbers-header {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0px 16px;
+  }
+  .main .h2-header {
+    font-family: "Exo 2";
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+    margin-top: 72px;
+    margin-bottom: 32px;
+  }
+  .main .br {
+    display: block;
+  }
+  .main .introduce-section {
+    padding: 48px 0px;
+  }
+  .main .introduce-section .logo {
+    margin-bottom: 48px;
+  }
+  .main .introduce-section .introduce-wrapper {
+    display: block;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
+    margin-bottom: 32px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3) {
+    margin-bottom: 20px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-green-text,
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-places {
+    display: none;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-tablet {
+    display: block;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
+    margin-bottom: 32px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-img {
+    display: none;
+  }
+  .main .benefit-section .benefit-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-item {
+    width: 450px;
+  }
+  .main .who-is-section .who-is-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-text {
+    width: 100%;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-scales {
+    width: 100%;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-desktop-content {
+    display: none;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-tablet-content {
+    display: block;
+  }
+  .main .how-to-know-section {
+    padding-bottom: 48px;
+  }
+  .main .how-to-know-section .how-to-know-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .main .video-section .video-section-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .main .video-section .video-section-wrapper .video {
+    width: 100%;
+  }
+  .main .video-section .video-section-wrapper .video-section-text {
+    width: 100%;
+  }
+  .main .companies-section .companies-section-header {
+    text-align: center;
+    font-family: "Exo 2";
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+  }
+  .main .companies-section .companies-tablet-slider {
+    display: block;
+  }
+  .main .companies-section .companies-slider {
+    display: none;
+  }
+  .main .numbers-section {
+    padding-bottom: 48px;
+  }
+  .main .numbers-section .numbers-row {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .main .numbers-section .numbers-row .numbers-item {
+    width: 75%;
+  }
+  .main .benefits-section {
+    padding-bottom: 48px;
+  }
+  .main .benefits-section .benefits-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .main .benefits-section .benefits-footer {
+    margin-top: 24px;
+  }
+  .main .form-section .form-section-wrapper {
+    flex-direction: column;
+  }
+  .main .form-section .form-section-wrapper .form-section-text {
+    width: 100%;
+  }
+  .main .form-section .form-section-wrapper .form-section-text .form-section-text-hide-tablet {
+    display: none;
+  }
+  .main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  .main .form-section .form-section-wrapper .form {
+    width: 70%;
+  }
+  .main .form-section .form-section-wrapper .form button {
+    width: 100%;
+  }
+  .main .review-section .slider-text .slider-item .review-wrapper {
+    flex-direction: column;
+  }
+  .main .review-section .slider-text .slider-item .review-wrapper .review-avatar {
+    width: 85px;
+  }
+  .main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon {
+    min-width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .footer .footer-wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+@media (max-width: 750px) {
+  .main .numbers-section .numbers-row {
+    margin-bottom: 0px;
+  }
+  .main .numbers-section .numbers-comparison {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .main .introduce-section {
+    padding-top: 24px;
+  }
+  .main .introduce-section .logo {
+    margin-bottom: 20px;
+  }
+  .main .introduce-section .logo > img {
+    height: 60px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content {
+    margin-right: 0px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-subtitle {
+    font-size: 21px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-title {
+    font-size: 34px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
+    font-family: "Exo 2";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
+    margin-bottom: 16px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content button {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-item {
+    padding: 0px 0px;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-item {
+    width: 100%;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
+    margin-bottom: 32px;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-scales {
+    margin-bottom: -24px;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-tablet-text {
+    margin-bottom: 32px;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-tablet-btn {
+    width: 100%;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main .start-in-it {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .main .video-section .video {
+    height: 230px;
+  }
+  .main .video-section .video .video-youtube {
+    border-radius: 12px;
+  }
+  .main .companies-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .main .companies-section .companies-section-header {
+    margin-bottom: 48px;
+  }
+  .main .companies-section .companies-slider .companies-section-item {
+    width: 160px;
+    height: 160px;
+    margin-right: 10px;
+  }
+  .main .sign-up-section button {
+    width: 100%;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main .benefits-section .benefits-footer {
+    text-align: left;
+  }
+  .main .form-section .form-section-wrapper {
+    gap: 24px;
+  }
+  .main .form-section .form-section-wrapper .form {
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+    padding: 0px;
+  }
+  .main .form-section .form-section-wrapper .form button {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0d1a30;
+  }
+  .main .review-section .review-section-header {
+    padding: 0px 16px;
+  }
+  .main .review-section .slider-text {
+    padding: 0px 16px;
+  }
+  .main .review-section .slider-text .slider-item {
+    margin-right: 16px;
+  }
+  .main .review-section .slider-text .slider-item .video-wrapper .video {
+    max-width: 310px;
+    height: 175px;
+  }
+  .main .review-section .slider-text .slider-item .review-wrapper {
+    max-width: 310px;
+  }
+  .main .review-section .review-section-btn {
+    width: 100%;
+  }
+  .footer .footer-btn {
+    width: 100%;
+  }
+  .footer .footer-buttons button {
+    width: 40px;
+    height: 40px;
+  }
+}
