@@ -113,7 +113,7 @@ body {
   padding-bottom: 65px;
 }
 .main .introduce-section .logo {
-  margin-bottom: 64px;
+  margin-bottom: 24px;
 }
 .main .introduce-section .logo > img {
   height: 80px;
@@ -124,30 +124,37 @@ body {
   justify-content: space-between;
   gap: 42px;
 }
-.main .introduce-section .introduce-wrapper .introduce-content-subtitle {
-  font-family: "Exo 2";
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 24px;
-}
 .main .introduce-section .introduce-wrapper .introduce-content-title {
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 56px;
   line-height: 124%;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-title > span {
   white-space: nowrap;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-subtitle {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-subtitle > span {
+  color: #4ebd09;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-green-text {
   color: #4ebd09;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.main .introduce-section .introduce-wrapper .introduce-content-tablet {
-  display: none;
+.main .introduce-section .introduce-wrapper .introduce-content-places-wrapper {
+  margin-top: 26px;
+}
+.main .introduce-section .introduce-wrapper .introduse-section-img {
+  width: 480px;
+  margin-top: 20px;
 }
 .main .introduce-section .introduce-wrapper button {
   width: 380px;
@@ -169,14 +176,17 @@ body {
 .main .introduce-section .introduce-wrapper button:hover {
   transform: translateY(10%);
 }
-.main .introduce-section .introduce-wrapper .introduce-img .introduce-content-subtitle-larger {
+.main .introduce-section .introduce-wrapper .introduce-content-tablet {
+  display: none;
+}
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-larger {
   font-size: 32px;
   line-height: 42px;
 }
-.main .introduce-section .introduce-wrapper .introduce-img .introduce-content-subtitle-smaller span {
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-smaller span {
   color: #4ebd09;
 }
-.main .introduce-section .introduce-wrapper .introduce-img .introduce-content-green-text {
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-green-text {
   margin-bottom: 20px;
   background: white;
   border-radius: 12px;
@@ -184,8 +194,63 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.main .introduce-section .introduce-wrapper .introduce-img > img {
-  width: 480px;
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  color: #0d1a30;
+  margin-top: 60px;
+}
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input {
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s all;
+}
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input label {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input input {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #0d1a30;
+  border-radius: 6px;
+  padding: 13px 50px;
+  caret-color: #4ebd09;
+  width: 100%;
+}
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input input:focus {
+  outline-color: #4ebd09;
+}
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input:focus-within {
+  color: #4ebd09;
+}
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form button {
+  width: 380px;
+  min-height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  margin-top: 24px;
+  color: #ffffff;
+  width: 100%;
+}
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form button:hover {
+  transform: translateY(10%);
 }
 .main .benefit-section .benefit-wrapper {
   gap: 24px;
@@ -969,33 +1034,20 @@ body {
     padding: 48px 0px;
   }
   .main .introduce-section .logo {
-    margin-bottom: 48px;
+    margin-bottom: 26px;
   }
   .main .introduce-section .introduce-wrapper {
     display: block;
   }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
-    margin-bottom: 32px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(3) {
-    margin-bottom: 20px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-green-text,
-  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-places {
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-places-wrapper {
     display: none;
   }
-  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-tablet {
-    display: block;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
-    margin-bottom: 32px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
-    margin-right: 0px;
-    margin-bottom: 32px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-img {
+  .main .introduce-section .introduce-wrapper .introduse-section-img {
     display: none;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
+    max-width: 500px;
+    margin: 20px auto 0px;
   }
   .main .benefit-section .benefit-wrapper {
     flex-direction: column;
@@ -1153,26 +1205,31 @@ body {
     font-size: 34px;
     margin-top: 16px;
   }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(2) {
-    font-family: "Exo 2";
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 48px;
-    margin-bottom: 20px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(4) {
-    margin-bottom: 16px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-content > p:nth-child(5) {
-    margin-right: 0px;
-    margin-bottom: 16px;
-  }
   .main .introduce-section .introduce-wrapper .introduce-content button {
     font-family: "Exo 2";
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     width: 100%;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-larger {
+    font-size: 26px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-smaller {
+    font-size: 21px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-green-text {
+    padding: 12px 10px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
+    padding: 10px 16px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input {
+    margin-bottom: 5px;
+    gap: 5px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form button {
+    margin-top: 5px;
   }
   .main .benefit-section .benefit-wrapper .benefit-item {
     padding: 0px 0px;

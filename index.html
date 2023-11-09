@@ -104,19 +104,27 @@
                             >
                                 Безкоштовний вебінар
                             </p>
-                            <p
-                                class="introduce-content-subtitle introduce-content-places"
-                            >
-                                Кількість місць обмежена
-                            </p>
-                            <p
-                                class="introduce-content-subtitle introduce-content-places"
-                            >
-                                Залишилось <span>8</span> місць
-                            </p>
-                            <button class="main-btn">Зареєструватися</button>
+                            <div class="introduce-content-places-wrapper">
+                                <p
+                                    class="introduce-content-subtitle introduce-content-places"
+                                >
+                                    Кількість місць обмежена
+                                </p>
+                                <p
+                                    class="introduce-content-subtitle introduce-content-places"
+                                >
+                                    Залишилось <span>8</span> місць
+                                </p>
+                            </div>
+
+                            <img
+                                class="introduse-section-img"
+                                src="images/review-section-img.webp"
+                                alt=""
+                            />
+                            <!-- <button class="main-btn">Зареєструватися</button> -->
                         </div>
-                        <div class="introduce-img">
+                        <div class="introduce-form-wrapper">
                             <div class="introduce-text-wrapper">
                                 <div class="introduce-content-subtitle">
                                     <p
@@ -136,7 +144,57 @@
                                     Безкоштовний вебінар
                                 </p>
                             </div>
-                            <img src="images/review-section-img.webp" alt="" />
+                            <form
+                                class="introduce-form"
+                                method="POST"
+                                action="send.php"
+                            >
+                                <div class="row form-input">
+                                    <label class="label" for="name">Імʼя</label>
+                                    <input
+                                        style="padding-left: 10px"
+                                        type="text"
+                                        class="form-input"
+                                        name="name"
+                                        id="name"
+                                        placeholder="Ім'я"
+                                        required=""
+                                    />
+                                </div>
+                                <div class="row form-input">
+                                    <label class="label" for="phone"
+                                        >Телефон</label
+                                    >
+                                    <input
+                                        type="tel"
+                                        class="form-input"
+                                        name="phone1"
+                                        id="phone1"
+                                        required
+                                    />
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="row form-input">
+                                    <label class="label" for="email"
+                                        >Email</label
+                                    >
+                                    <input
+                                        style="padding-left: 10px"
+                                        type="email"
+                                        class="form-input"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Email"
+                                        required=""
+                                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                                        maxlength="25"
+                                    />
+                                </div>
+                                <button type="submit" class="btn">
+                                    Записатись на безкоштовний вебінар
+                                </button>
+                            </form>
+                            <!-- <img src="images/review-section-img.webp" alt="" /> -->
                         </div>
                     </div>
                 </div>
