@@ -129,6 +129,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  margin-bottom: 24px;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-title {
   font-family: "Exo 2";
@@ -144,9 +145,6 @@ body {
   color: #4ebd09;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.main .introduce-section .introduce-wrapper .introduce-content-places {
-  margin-bottom: 48px;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-tablet {
   display: none;
@@ -171,17 +169,20 @@ body {
 .main .introduce-section .introduce-wrapper button:hover {
   transform: translateY(10%);
 }
-.main .introduce-section .introduce-wrapper .introduce-img .introduce-text-wrapper {
-  background-color: #4ebd09;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 15px;
+.main .introduce-section .introduce-wrapper .introduce-img .introduce-content-subtitle-larger {
+  font-size: 32px;
+  line-height: 42px;
 }
-.main .introduce-section .introduce-wrapper .introduce-img .introduce-content-subtitle {
+.main .introduce-section .introduce-wrapper .introduce-img .introduce-content-subtitle-smaller span {
+  color: #4ebd09;
+}
+.main .introduce-section .introduce-wrapper .introduce-img .introduce-content-green-text {
   margin-bottom: 20px;
-  text-align: center;
-  color: #0d1a30;
-  margin-bottom: 0;
+  background: white;
+  border-radius: 12px;
+  padding: 15px 10px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .main .introduce-section .introduce-wrapper .introduce-img > img {
   width: 480px;
