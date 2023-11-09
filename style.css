@@ -433,25 +433,25 @@ body {
 .main .start-in-it .start-in-it-btn:hover {
   transform: translateY(10%);
 }
+.main .video-section {
+  padding-bottom: 40px;
+}
+.main .video-section .check-img {
+  background-image: url(images/check-2-img.svg);
+}
 .main .video-section .video-section-header {
   text-align: center;
 }
-.main .video-section .video {
-  width: 50%;
-  height: 354px;
-  background: #8090ab;
-  border-radius: 12px;
-  margin-bottom: 50px;
-}
-.main .video-section .video .video-youtube {
-  border-radius: 12px;
-}
-.main .video-section .video-section-wrapper {
-  flex-direction: row-reverse;
+.main .video-section .video-section-row {
   align-items: center;
-  justify-content: center;
-  gap: 32px;
-  text-align: center;
+  gap: 20px;
+}
+.main .video-section .video-section-row .video-section-img-wrapper {
+  width: 45%;
+}
+.main .video-section .video-section-row .video-section-img {
+  max-width: 480px;
+  width: 100%;
 }
 .main .video-section .video-section-text {
   margin: 0 auto;
@@ -709,6 +709,9 @@ body {
 }
 .main .benefits-section {
   padding-bottom: 104px;
+}
+.main .benefits-section .check-img {
+  background-image: url(images/check-3-img.svg);
 }
 .main .benefits-section .benefits-wrapper {
   display: grid;
@@ -1047,7 +1050,7 @@ body {
   }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
     max-width: 500px;
-    margin: 20px auto 0px;
+    margin-top: 20px;
   }
   .main .benefit-section .benefit-wrapper {
     flex-direction: column;
@@ -1082,14 +1085,15 @@ body {
   .main .video-section .video-section-header {
     text-align: left;
   }
-  .main .video-section .video-section-wrapper {
-    flex-direction: column;
-    gap: 24px;
+  .main .video-section .video-section-row {
+    flex-direction: column-reverse;
   }
-  .main .video-section .video-section-wrapper .video {
+  .main .video-section .video-section-row .video-section-img-wrapper {
     width: 100%;
+    text-align: center;
   }
-  .main .video-section .video-section-wrapper .video-section-text {
+  .main .video-section .video-section-text {
+    margin: 0;
     width: 100%;
   }
   .main .companies-section .companies-section-header {
@@ -1211,6 +1215,10 @@ body {
     font-size: 16px;
     line-height: 24px;
     width: 100%;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
+    width: 100%;
+    max-width: none;
   }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-larger {
     font-size: 26px;
