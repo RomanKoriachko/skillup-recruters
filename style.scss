@@ -62,8 +62,25 @@ body {
         color: #ffffff;
         padding-top: 24px;
         padding-bottom: 65px;
+        position: relative;
+        background-position: 0% 0%;
+        .introduce-section-bg {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            background-image: url(images/introduce-section-bg-2.png),
+                url(images/introduce-section-logo.png);
+            background-position: 0% 100%, 100% 100%;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            z-index: 1;
+        }
         .logo {
             margin-bottom: 24px;
+            z-index: 10;
+            position: relative;
             > img {
                 height: 80px;
             }
@@ -72,10 +89,18 @@ body {
             display: grid;
             grid-template-columns: 1fr 0.6fr;
             justify-content: space-between;
+            align-items: start;
             gap: 42px;
+            position: relative;
+            z-index: 10;
+            .introduce-text-tablet-wrapper {
+                display: none;
+            }
             .introduce-content-title {
                 @include fonts.h1();
-                margin-bottom: 20px;
+                font-size: 52px;
+                margin-bottom: 26px;
+                text-transform: uppercase;
                 > span {
                     white-space: nowrap;
                 }
@@ -87,13 +112,27 @@ body {
                     color: #4ebd09;
                 }
             }
+            .heart-img {
+                background-image: url(images/ukr-flag-heart.svg);
+                height: 30px;
+                width: 30px;
+            }
+            .upper-case {
+                text-transform: uppercase;
+                font-weight: 500;
+                gap: 20px;
+                align-items: center;
+            }
             .introduce-content-green-text {
                 color: #4ebd09;
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
             .introduce-content-places-wrapper {
-                margin-top: 26px;
+                margin-top: 36px;
+                .introduce-content-places {
+                    margin-bottom: 5px;
+                }
             }
             .introduse-section-img {
                 width: 480px;
@@ -107,6 +146,10 @@ body {
                 display: none;
             }
             .introduce-form-wrapper {
+                background-color: white;
+                color: #0d1a30;
+                padding: 32px;
+                border-radius: 12px;
                 .introduce-content-subtitle-larger {
                     font-size: 32px;
                     line-height: 42px;
@@ -120,18 +163,13 @@ body {
                     margin-bottom: 20px;
                     background: white;
                     border-radius: 12px;
-                    padding: 15px 10px;
                     width: fit-content;
                 }
-                // > img {
-                //     width: 480px;
-                // }
                 .introduce-form {
                     background: #ffffff;
                     border-radius: 12px;
-                    padding: 32px;
                     color: #0d1a30;
-                    margin-top: 60px;
+                    margin-top: 30px;
                     .form-input {
                         flex-direction: column;
                         gap: 8px;
@@ -787,11 +825,20 @@ body {
         }
         .introduce-section {
             padding: 48px 0px;
+            .introduce-section-bg {
+                background-image: url(images/introduce-section-bg-2.png);
+            }
             .logo {
                 margin-bottom: 26px;
             }
             .introduce-wrapper {
                 display: block;
+                .introduce-text-tablet-wrapper {
+                    display: block;
+                    span {
+                        color: #4ebd09;
+                    }
+                }
                 .introduce-content {
                     .introduce-content-places-wrapper {
                         display: none;
@@ -800,10 +847,14 @@ body {
                 .introduse-section-img {
                     display: none;
                 }
+                .introduce-text-wrapper {
+                    display: none;
+                }
                 .introduce-form-wrapper {
+                    max-width: 500px;
+                    margin-top: 20px;
                     .introduce-form {
-                        max-width: 500px;
-                        margin-top: 20px;
+                        margin-top: 0px;
                     }
                 }
             }
@@ -972,6 +1023,11 @@ body {
         }
         .introduce-section {
             padding-top: 24px;
+            .introduce-section-bg {
+                background-image: url(images/introduce-section-bg.png);
+                background-size: cover;
+                background-position: right;
+            }
             .logo {
                 margin-bottom: 20px;
                 > img {
@@ -979,6 +1035,11 @@ body {
                 }
             }
             .introduce-wrapper {
+                .introduce-text-tablet-wrapper {
+                    .introduce-content-green-text {
+                        margin: 16px 0px;
+                    }
+                }
                 .introduce-content {
                     margin-right: 0px;
                     .introduce-content-subtitle {
@@ -994,21 +1055,19 @@ body {
                     }
                 }
                 .introduce-form-wrapper {
-                    .introduce-form {
-                        width: 100%;
-                        max-width: none;
-                    }
+                    width: 100%;
+                    max-width: 400px;
                     .introduce-content-subtitle-larger {
                         font-size: 26px;
                     }
                     .introduce-content-subtitle-smaller {
                         font-size: 21px;
                     }
-                    .introduce-content-green-text {
-                        padding: 12px 10px;
-                    }
                     .introduce-form {
-                        padding: 10px 16px;
+                        width: 100%;
+                        max-width: none;
+                        padding: 0px;
+
                         .form-input {
                             margin-bottom: 5px;
                             gap: 5px;

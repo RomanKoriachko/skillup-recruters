@@ -111,9 +111,25 @@ body {
   color: #ffffff;
   padding-top: 24px;
   padding-bottom: 65px;
+  position: relative;
+  background-position: 0% 0%;
+}
+.main .introduce-section .introduce-section-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: url(images/introduce-section-bg-2.png), url(images/introduce-section-logo.png);
+  background-position: 0% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 1;
 }
 .main .introduce-section .logo {
   margin-bottom: 24px;
+  z-index: 10;
+  position: relative;
 }
 .main .introduce-section .logo > img {
   height: 80px;
@@ -122,14 +138,22 @@ body {
   display: grid;
   grid-template-columns: 1fr 0.6fr;
   justify-content: space-between;
+  align-items: start;
   gap: 42px;
+  position: relative;
+  z-index: 10;
+}
+.main .introduce-section .introduce-wrapper .introduce-text-tablet-wrapper {
+  display: none;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-title {
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 56px;
   line-height: 124%;
-  margin-bottom: 20px;
+  font-size: 52px;
+  margin-bottom: 26px;
+  text-transform: uppercase;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-title > span {
   white-space: nowrap;
@@ -144,13 +168,27 @@ body {
 .main .introduce-section .introduce-wrapper .introduce-content-subtitle > span {
   color: #4ebd09;
 }
+.main .introduce-section .introduce-wrapper .heart-img {
+  background-image: url(images/ukr-flag-heart.svg);
+  height: 30px;
+  width: 30px;
+}
+.main .introduce-section .introduce-wrapper .upper-case {
+  text-transform: uppercase;
+  font-weight: 500;
+  gap: 20px;
+  align-items: center;
+}
 .main .introduce-section .introduce-wrapper .introduce-content-green-text {
   color: #4ebd09;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-places-wrapper {
-  margin-top: 26px;
+  margin-top: 36px;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-places-wrapper .introduce-content-places {
+  margin-bottom: 5px;
 }
 .main .introduce-section .introduce-wrapper .introduse-section-img {
   width: 480px;
@@ -179,6 +217,12 @@ body {
 .main .introduce-section .introduce-wrapper .introduce-content-tablet {
   display: none;
 }
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper {
+  background-color: white;
+  color: #0d1a30;
+  padding: 32px;
+  border-radius: 12px;
+}
 .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-larger {
   font-size: 32px;
   line-height: 42px;
@@ -190,16 +234,14 @@ body {
   margin-bottom: 20px;
   background: white;
   border-radius: 12px;
-  padding: 15px 10px;
   width: -moz-fit-content;
   width: fit-content;
 }
 .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
   background: #ffffff;
   border-radius: 12px;
-  padding: 32px;
   color: #0d1a30;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input {
   flex-direction: column;
@@ -1036,11 +1078,20 @@ body {
   .main .introduce-section {
     padding: 48px 0px;
   }
+  .main .introduce-section .introduce-section-bg {
+    background-image: url(images/introduce-section-bg-2.png);
+  }
   .main .introduce-section .logo {
     margin-bottom: 26px;
   }
   .main .introduce-section .introduce-wrapper {
     display: block;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-text-tablet-wrapper {
+    display: block;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-text-tablet-wrapper span {
+    color: #4ebd09;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-places-wrapper {
     display: none;
@@ -1048,9 +1099,15 @@ body {
   .main .introduce-section .introduce-wrapper .introduse-section-img {
     display: none;
   }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
+  .main .introduce-section .introduce-wrapper .introduce-text-wrapper {
+    display: none;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper {
     max-width: 500px;
     margin-top: 20px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
+    margin-top: 0px;
   }
   .main .benefit-section .benefit-wrapper {
     flex-direction: column;
@@ -1193,11 +1250,19 @@ body {
   .main .introduce-section {
     padding-top: 24px;
   }
+  .main .introduce-section .introduce-section-bg {
+    background-image: url(images/introduce-section-bg.png);
+    background-size: cover;
+    background-position: right;
+  }
   .main .introduce-section .logo {
     margin-bottom: 20px;
   }
   .main .introduce-section .logo > img {
     height: 60px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-text-tablet-wrapper .introduce-content-green-text {
+    margin: 16px 0px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content {
     margin-right: 0px;
@@ -1216,9 +1281,9 @@ body {
     line-height: 24px;
     width: 100%;
   }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper {
     width: 100%;
-    max-width: none;
+    max-width: 400px;
   }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-larger {
     font-size: 26px;
@@ -1226,11 +1291,10 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-smaller {
     font-size: 21px;
   }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-green-text {
-    padding: 12px 10px;
-  }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
-    padding: 10px 16px;
+    width: 100%;
+    max-width: none;
+    padding: 0px;
   }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input {
     margin-bottom: 5px;
