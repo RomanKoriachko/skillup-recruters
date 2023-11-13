@@ -227,6 +227,9 @@ body {
   font-size: 32px;
   line-height: 42px;
 }
+.main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-smaller {
+  text-transform: uppercase;
+}
 .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-smaller span {
   color: #4ebd09;
 }
@@ -820,7 +823,7 @@ body {
 .main .form-section .form-section-wrapper .form .form-input {
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   transition: 0.3s all;
 }
 .main .form-section .form-section-wrapper .form .form-input label {
@@ -845,6 +848,9 @@ body {
 }
 .main .form-section .form-section-wrapper .form .form-input:focus-within {
   color: #4ebd09;
+}
+.main .form-section .form-section-wrapper .form .form-phone-input {
+  margin-bottom: 0;
 }
 .main .form-section .form-section-wrapper .form button {
   width: 380px;
@@ -1087,24 +1093,22 @@ body {
   .main .introduce-section .introduce-wrapper {
     display: block;
   }
-  .main .introduce-section .introduce-wrapper .introduce-text-tablet-wrapper {
-    display: block;
-  }
   .main .introduce-section .introduce-wrapper .introduce-text-tablet-wrapper span {
     color: #4ebd09;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-places-wrapper {
-    display: none;
+    margin-top: 20px;
   }
   .main .introduce-section .introduce-wrapper .introduse-section-img {
-    display: none;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-text-wrapper {
     display: none;
   }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper {
     max-width: 500px;
     margin-top: 20px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-green-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
     margin-top: 0px;
@@ -1284,6 +1288,7 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper {
     width: 100%;
     max-width: 400px;
+    padding: 16px;
   }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-larger {
     font-size: 26px;
