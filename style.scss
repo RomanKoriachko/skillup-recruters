@@ -39,6 +39,37 @@ body {
 }
 
 // Desktop
+
+.header {
+	position: fixed;
+	z-index: 1000;
+	background: white;
+	width: 100%;
+	padding: 10px 0px;
+	border-bottom: 2px solid #f0f0f0;
+	.header-row {
+		align-items: center;
+		justify-content: space-between;
+		.logo {
+			height: 60px;
+			> img {
+				height: 100%;
+			}
+		}
+		.header-menu {
+			.header-menu-item {
+				@include fonts.b2();
+				margin: 0px 10px;
+				cursor: pointer;
+			}
+		}
+		.header-btn {
+			@include mainButton();
+			width: 340px;
+		}
+	}
+}
+
 .main {
 	.h2-header {
 		@include fonts.h2();
@@ -65,7 +96,7 @@ body {
 	.introduce-section {
 		background: #0d1a30;
 		color: #ffffff;
-		padding-top: 24px;
+		padding-top: 104px;
 		padding-bottom: 65px;
 		position: relative;
 		background-position: 0% 0%;
@@ -81,14 +112,6 @@ body {
 			background-repeat: no-repeat;
 			background-size: auto 100%;
 			z-index: 1;
-		}
-		.logo {
-			margin-bottom: 24px;
-			z-index: 10;
-			position: relative;
-			> img {
-				height: 80px;
-			}
 		}
 		.introduce-wrapper {
 			display: grid;
@@ -216,6 +239,7 @@ body {
 		background-color: #f9f9f9;
 		.demand-header {
 			margin-bottom: 70px;
+			@include fonts.h2();
 		}
 		.demand-wrapper {
 			display: grid;
@@ -223,21 +247,31 @@ body {
 		}
 		.demand-item {
 			gap: 32px;
-			> img {
-				width: 50%;
-				object-fit: contain;
+			.demand-item-title {
+				@include fonts.h3();
+			}
+			.demand-item-img-wrapper {
+				width: 45%;
+				height: fit-content;
+				border-radius: 6px;
+				border: 3px solid #f0f0f0;
+				box-shadow: 0px 4px 10px 0px #00000029;
+			}
+			.demand-img {
+				width: 100%;
+			}
+			&:first-child {
+				margin-bottom: 30px;
 			}
 			&:last-child {
 				justify-content: flex-end;
 			}
 		}
 		.demand-text-wrapper {
-			width: 34%;
+			width: 40%;
 		}
 		.demand-item-text {
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 23px;
+			@include fonts.t2();
 		}
 	}
 	.benefit-section {

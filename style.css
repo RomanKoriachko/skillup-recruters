@@ -72,6 +72,53 @@ body {
   color: #0d1a30;
 }
 
+.header {
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.header .header-row {
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-row .logo {
+  height: 60px;
+}
+.header .header-row .logo > img {
+  height: 100%;
+}
+.header .header-row .header-menu .header-menu-item {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.header .header-row .header-btn {
+  width: 380px;
+  min-height: 50px;
+  background: #4ebd09;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  transition: 0.3s all;
+  overflow: hidden;
+  box-shadow: none;
+  width: 340px;
+}
+.header .header-row .header-btn:hover {
+  transform: translateY(10%);
+}
+
 .main .h2-header {
   font-family: "Exo 2";
   font-weight: 800;
@@ -115,7 +162,7 @@ body {
 .main .introduce-section {
   background: #0d1a30;
   color: #ffffff;
-  padding-top: 24px;
+  padding-top: 104px;
   padding-bottom: 65px;
   position: relative;
   background-position: 0% 0%;
@@ -131,14 +178,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto 100%;
   z-index: 1;
-}
-.main .introduce-section .logo {
-  margin-bottom: 24px;
-  z-index: 10;
-  position: relative;
-}
-.main .introduce-section .logo > img {
-  height: 80px;
 }
 .main .introduce-section .introduce-wrapper {
   display: grid;
@@ -311,6 +350,10 @@ body {
 }
 .main .demand-section .demand-header {
   margin-bottom: 70px;
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
 }
 .main .demand-section .demand-wrapper {
   display: grid;
@@ -319,21 +362,37 @@ body {
 .main .demand-section .demand-item {
   gap: 32px;
 }
-.main .demand-section .demand-item > img {
-  width: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.main .demand-section .demand-item .demand-item-title {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 130%;
+}
+.main .demand-section .demand-item .demand-item-img-wrapper {
+  width: 45%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 6px;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1607843137);
+}
+.main .demand-section .demand-item .demand-img {
+  width: 100%;
+}
+.main .demand-section .demand-item:first-child {
+  margin-bottom: 30px;
 }
 .main .demand-section .demand-item:last-child {
   justify-content: flex-end;
 }
 .main .demand-section .demand-text-wrapper {
-  width: 34%;
+  width: 40%;
 }
 .main .demand-section .demand-item-text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 .main .benefit-section .benefit-wrapper {
   gap: 24px;
