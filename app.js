@@ -1,3 +1,5 @@
+AOS.init();
+
 // Navigation
 
 let mainButtons = document.querySelectorAll('.main-btn');
