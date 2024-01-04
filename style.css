@@ -58,6 +58,12 @@ table {
   padding: 0px 25px;
 }
 
+.small-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 90px;
+}
+
 .row {
   display: flex;
 }
@@ -297,6 +303,37 @@ body {
 }
 .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form button:hover {
   transform: translateY(10%);
+}
+.main .demand-section {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  background-color: #f9f9f9;
+}
+.main .demand-section .demand-header {
+  margin-bottom: 70px;
+}
+.main .demand-section .demand-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.main .demand-section .demand-item {
+  gap: 32px;
+}
+.main .demand-section .demand-item > img {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .demand-section .demand-item:last-child {
+  justify-content: flex-end;
+}
+.main .demand-section .demand-text-wrapper {
+  width: 34%;
+}
+.main .demand-section .demand-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
 }
 .main .benefit-section .benefit-wrapper {
   gap: 24px;
@@ -1114,6 +1151,24 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
     margin-top: 0px;
   }
+  .main .demand-section .demand-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .main .demand-section .demand-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .demand-section .demand-text-wrapper {
+    width: 100%;
+  }
+  .main .demand-section .demand-text-wrapper .demand-item-title {
+    text-align: center;
+  }
+  .main .demand-section .demand-img {
+    max-width: 500px;
+    min-width: 320px;
+  }
   .main .benefit-section .benefit-wrapper {
     flex-direction: column;
     align-items: center;
@@ -1308,6 +1363,27 @@ body {
   }
   .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form button {
     margin-top: 5px;
+  }
+  .main .demand-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .main .demand-section .demand-header {
+    margin-bottom: 32px;
+  }
+  .main .demand-section .demand-wrapper {
+    gap: 16px;
+  }
+  .main .demand-section .demand-item {
+    gap: 16px;
+  }
+  .main .demand-section .demand-img {
+    width: 100%;
+  }
+  .main .demand-section .demand-text-wrapper .demand-item-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .main .benefit-section .benefit-wrapper .benefit-item {
     padding: 0px 0px;
