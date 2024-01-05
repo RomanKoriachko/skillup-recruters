@@ -102,6 +102,10 @@ body {
   line-height: 24px;
   margin: 0px 10px;
   cursor: pointer;
+  transition: color 0.3s;
+}
+.header .header-row .header-menu .header-menu-item:hover {
+  color: #4ebd09;
 }
 .header .header-row .header-btn {
   min-height: 50px;
@@ -171,24 +175,42 @@ body {
   padding: 15px 16px;
 }
 .main .mobile-registration-btn-wrapper > button {
-  width: 380px;
+  width: 430px;
   min-height: 50px;
-  background: #4ebd09;
-  border-radius: 6px;
-  border: none;
-  padding: 5px 12px;
-  cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  transition: transform 0.3s;
-  overflow: hidden;
-  box-shadow: none;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
   width: 100%;
 }
-.main .mobile-registration-btn-wrapper > button:hover {
-  transform: translateY(10%);
+.main .mobile-registration-btn-wrapper > button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+.main .mobile-registration-btn-wrapper > button:hover::before {
+  box-shadow: 0 0 15px 5px #4ebd09;
+}
+@media (max-width: 750px) {
+  .main .mobile-registration-btn-wrapper > button {
+    width: 100%;
+  }
 }
 .main .br {
   display: none;
@@ -275,24 +297,41 @@ body {
   color: #4ebd09;
 }
 .main .introduce-section .introduce-wrapper button {
-  width: 380px;
+  width: 430px;
   min-height: 50px;
-  background: #4ebd09;
-  border-radius: 6px;
-  border: none;
-  padding: 5px 12px;
-  cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  transition: transform 0.3s;
-  overflow: hidden;
-  box-shadow: none;
-  color: #0d1a30;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
 }
-.main .introduce-section .introduce-wrapper button:hover {
-  transform: translateY(10%);
+.main .introduce-section .introduce-wrapper button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+.main .introduce-section .introduce-wrapper button:hover::before {
+  box-shadow: 0 0 15px 5px #4ebd09;
+}
+@media (max-width: 750px) {
+  .main .introduce-section .introduce-wrapper button {
+    width: 100%;
+  }
 }
 .main .demand-section {
   padding-top: 60px;
@@ -392,24 +431,42 @@ body {
 }
 .main .who-is-section .who-is-btn {
   margin-top: 30px;
-  width: 380px;
+  width: 430px;
   min-height: 50px;
-  background: #4ebd09;
-  border-radius: 6px;
-  border: none;
-  padding: 5px 12px;
-  cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  transition: transform 0.3s;
-  overflow: hidden;
-  box-shadow: none;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
   color: #ffffff;
 }
-.main .who-is-section .who-is-btn:hover {
-  transform: translateY(10%);
+.main .who-is-section .who-is-btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+.main .who-is-section .who-is-btn:hover::before {
+  box-shadow: 0 0 15px 5px #4ebd09;
+}
+@media (max-width: 750px) {
+  .main .who-is-section .who-is-btn {
+    width: 100%;
+  }
 }
 .main .check-img {
   min-width: 24px;
@@ -672,25 +729,42 @@ body {
   text-align: center;
   background: #0d1a30;
 }
-.main .sign-up-section button {
-  width: 380px;
+.main .sign-up-section .sign-up-btn {
+  width: 430px;
   min-height: 50px;
-  background: #4ebd09;
-  border-radius: 6px;
-  border: none;
-  padding: 5px 12px;
-  cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  transition: transform 0.3s;
-  overflow: hidden;
-  box-shadow: none;
-  color: #0d1a30;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
 }
-.main .sign-up-section button:hover {
-  transform: translateY(10%);
+.main .sign-up-section .sign-up-btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+.main .sign-up-section .sign-up-btn:hover::before {
+  box-shadow: 0 0 15px 5px #4ebd09;
+}
+@media (max-width: 750px) {
+  .main .sign-up-section .sign-up-btn {
+    width: 100%;
+  }
 }
 .main .benefits-section {
   padding-bottom: 160px;
@@ -843,25 +917,43 @@ body {
   margin-bottom: 0;
 }
 .main .form-section .form-section-wrapper .form button {
-  width: 380px;
+  width: 430px;
   min-height: 50px;
-  background: #4ebd09;
-  border-radius: 6px;
-  border: none;
-  padding: 5px 12px;
-  cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  transition: transform 0.3s;
-  overflow: hidden;
-  box-shadow: none;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
   margin-top: 24px;
   color: #ffffff;
 }
-.main .form-section .form-section-wrapper .form button:hover {
-  transform: translateY(10%);
+.main .form-section .form-section-wrapper .form button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+.main .form-section .form-section-wrapper .form button:hover::before {
+  box-shadow: 0 0 15px 5px #4ebd09;
+}
+@media (max-width: 750px) {
+  .main .form-section .form-section-wrapper .form button {
+    width: 100%;
+  }
 }
 
 .footer {
@@ -880,24 +972,42 @@ body {
   margin-bottom: 32px;
 }
 .footer .footer-btn {
-  width: 380px;
+  width: 430px;
   min-height: 50px;
-  background: #4ebd09;
-  border-radius: 6px;
-  border: none;
-  padding: 5px 12px;
-  cursor: pointer;
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  transition: transform 0.3s;
-  overflow: hidden;
-  box-shadow: none;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
   margin-bottom: 32px;
 }
-.footer .footer-btn:hover {
-  transform: translateY(10%);
+.footer .footer-btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+.footer .footer-btn:hover::before {
+  box-shadow: 0 0 15px 5px #4ebd09;
+}
+@media (max-width: 750px) {
+  .footer .footer-btn {
+    width: 100%;
+  }
 }
 .footer .footer-buttons button {
   width: 26px;
