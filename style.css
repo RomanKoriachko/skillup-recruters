@@ -243,6 +243,8 @@ body {
 }
 .main .introduce-section .introduce-wrapper .heart-img {
   background-image: url(images/ukr-flag-heart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   height: 30px;
   width: 30px;
 }
@@ -343,31 +345,6 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
-.main .benefit-section .benefit-wrapper {
-  gap: 24px;
-}
-.main .benefit-section .benefit-wrapper .benefit-item {
-  width: 410px;
-  padding: 0px 16px;
-  text-align: center;
-}
-.main .benefit-section .benefit-wrapper .benefit-item > img {
-  margin-bottom: 12px;
-}
-.main .benefit-section .benefit-wrapper .benefit-item .benefit-item-title {
-  font-family: "Exo 2";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 25px;
-}
-.main .benefit-section .benefit-wrapper .benefit-item .benefit-item-subtitle {
-  font-family: "Exo 2";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: left;
-}
 .main .who-is-section .who-is-wrapper {
   gap: 32px;
   align-items: center;
@@ -404,8 +381,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  margin-bottom: 24px;
-  margin-top: 48px;
+  margin-bottom: 0px;
+  margin-top: 30px;
   border-radius: 8px;
   padding: 20px 10px;
   background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
@@ -434,55 +411,11 @@ body {
 .main .who-is-section .who-is-btn:hover {
   transform: translateY(10%);
 }
-.main .how-to-know-section {
-  padding-bottom: 104px;
-}
-.main .how-to-know-section .how-to-know-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.main .how-to-know-section .how-to-know-wrapper .how-to-know-item .how-to-know-text {
-  font-family: "Exo 2";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-}
 .main .check-img {
   min-width: 24px;
   height: 24px;
   background-image: url(images/check-circle.svg);
   margin-right: 8px;
-}
-.main .start-in-it {
-  background: #0d1a30;
-  color: #ffffff;
-  text-align: center;
-  font-family: "Exo 2";
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 48px;
-  padding: 48px 0px;
-}
-.main .start-in-it .start-in-it-btn {
-  width: 380px;
-  min-height: 50px;
-  background: #4ebd09;
-  border-radius: 6px;
-  border: none;
-  padding: 5px 12px;
-  cursor: pointer;
-  font-family: "Exo 2";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  transition: transform 0.3s;
-  overflow: hidden;
-  box-shadow: none;
-  margin-top: 48px;
-}
-.main .start-in-it .start-in-it-btn:hover {
-  transform: translateY(10%);
 }
 .main .program-section {
   padding-bottom: 80px;
@@ -791,8 +724,11 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
-.main .coach-section .coach-section-content .coach-img {
+.main .coach-section .coach-section-content .coach-img-wrapper {
   width: 40%;
+}
+.main .coach-section .coach-section-content .coach-img-wrapper .coach-img {
+  width: 100%;
 }
 .main .coach-section .coach-section-content .coach-section-description {
   width: 50%;
@@ -826,7 +762,10 @@ body {
   background-size: cover;
 }
 .main .coach-section .coach-section-content .coach-section-description .coach-section-list-item p {
-  line-height: 145%;
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 .main .form-section {
   background: #0d1a30;
@@ -924,122 +863,6 @@ body {
 .main .form-section .form-section-wrapper .form button:hover {
   transform: translateY(10%);
 }
-.main .review-section {
-  padding-bottom: 48px;
-  text-align: center;
-  overflow: hidden;
-}
-.main .review-section .review-section-header {
-  text-align: left;
-}
-.main .review-section .slider-text .slider-item {
-  margin-right: 34px;
-}
-.main .review-section .slider-text .slider-item .review-text-author {
-  font-family: "Exo 2";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-}
-.main .review-section .slider-text .slider-item .review-text-position {
-  text-align: left;
-  font-family: "Exo 2";
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-}
-.main .review-section .slider-text .slider-item .video-wrapper .video {
-  width: 410px;
-  height: 224px;
-  background: #8090ab;
-  border-radius: 8px;
-  margin-bottom: 16px;
-}
-.main .review-section .slider-text .slider-item .video-wrapper .video .video-review {
-  border-radius: 8px;
-}
-.main .review-section .slider-text .slider-item .review-wrapper {
-  gap: 24px;
-  width: 410px;
-  margin-top: 48px;
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-avatar {
-  min-width: 85px;
-  height: 85px;
-  background-position: center;
-  background-size: contain;
-  border-radius: 50px;
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-1 {
-  background-image: url(images/user-avatar-1.jpg);
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-2 {
-  background-image: url(images/user-avatar-2.jpg);
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-3 {
-  background-image: url(images/user-avatar-3.jpg);
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-4 {
-  background-image: url(images/user-avatar-4.jpg);
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-5 {
-  background-image: url(images/user-avatar-5.jpg);
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-6 {
-  background-image: url(images/user-avatar-6.jpg);
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-avatar-7 {
-  background-image: url(images/user-avatar-7.jpg);
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-text {
-  text-align: left;
-}
-.main .review-section .slider-text .slider-item .review-wrapper .review-text > p {
-  font-family: "Exo 2";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 124%;
-  margin-bottom: 16px;
-}
-.main .review-section .slider-text .slider-item .fb-icon {
-  min-width: 20px;
-  height: 20px;
-  background-size: cover;
-  background-image: url(images/facebook.svg);
-  transition: 0.3s all;
-}
-.main .review-section .slider-text .slider-item .fb-icon:hover {
-  transform: scale(1.2);
-}
-.main .review-section .slider-text .slick-dots {
-  bottom: -45px;
-}
-.main .review-section .author-and-fb-wrapper {
-  margin-top: 15px;
-  align-items: center;
-  gap: 10px;
-}
-.main .review-section .review-section-btn {
-  margin-top: 48px;
-  width: 380px;
-  min-height: 50px;
-  background: #4ebd09;
-  border-radius: 6px;
-  border: none;
-  padding: 5px 12px;
-  cursor: pointer;
-  font-family: "Exo 2";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  transition: transform 0.3s;
-  overflow: hidden;
-  box-shadow: none;
-  color: white;
-}
-.main .review-section .review-section-btn:hover {
-  transform: translateY(10%);
-}
 
 .footer {
   padding: 48px 0px;
@@ -1112,6 +935,9 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-content-title {
     font-size: 52px;
   }
+  .main .introduce-section .introduce-wrapper .introduce-content-center {
+    width: 75%;
+  }
   .main .benefit-section .benefit-wrapper .benefit-item {
     padding: 0px 5px;
   }
@@ -1163,33 +989,26 @@ body {
   .main .introduce-section .introduce-wrapper {
     display: block;
   }
-  .main .introduce-section .introduce-wrapper .introduce-text-tablet-wrapper span {
-    color: #4ebd09;
+  .main .introduce-section .introduce-wrapper .introduce-content-title {
+    width: 100%;
+    margin-bottom: 36px;
   }
-  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-places-wrapper {
-    margin-top: 20px;
-  }
-  .main .introduce-section .introduce-wrapper .introduse-section-img {
-    display: none;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper {
-    max-width: 500px;
-    margin-top: 20px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-green-text {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
-    margin-top: 0px;
+  .main .introduce-section .introduce-wrapper .introduce-content-center {
+    width: 100%;
   }
   .main .demand-section .demand-header {
     text-align: center;
     margin-bottom: 40px;
+    font-size: 34px;
   }
   .main .demand-section .demand-item {
     flex-direction: column;
     align-items: center;
+  }
+  .main .demand-section .demand-item .demand-item-img-wrapper {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
   }
   .main .demand-section .demand-text-wrapper {
     width: 100%;
@@ -1198,16 +1017,7 @@ body {
     text-align: center;
   }
   .main .demand-section .demand-img {
-    max-width: 500px;
-    min-width: 320px;
-  }
-  .main .benefit-section .benefit-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-  }
-  .main .benefit-section .benefit-wrapper .benefit-item {
-    width: 450px;
+    max-width: 600px;
   }
   .main .who-is-section .who-is-wrapper {
     flex-direction: column;
@@ -1219,17 +1029,21 @@ body {
   .main .who-is-section .who-is-wrapper .who-is-scales {
     width: 100%;
   }
+  .main .who-is-section .who-is-wrapper .who-is-img-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-img-wrapper > img {
+    max-width: 500px;
+  }
   .main .who-is-section .who-is-wrapper .who-is-desktop-content {
     display: none;
   }
   .main .who-is-section .who-is-wrapper .who-is-tablet-content {
     display: block;
   }
-  .main .how-to-know-section {
-    padding-bottom: 48px;
-  }
-  .main .how-to-know-section .how-to-know-wrapper {
-    grid-template-columns: 1fr;
+  .main .program-section {
+    padding-bottom: 30px;
   }
   .main .program-section .program-section-header {
     text-align: left;
@@ -1279,11 +1093,18 @@ body {
     margin-top: 24px;
   }
   .main .coach-section .coach-section-content {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-  .main .coach-section .coach-section-content .coach-img {
-    justify-self: center;
+  .main .coach-section .coach-section-content .coach-img-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .main .coach-section .coach-section-content .coach-img-wrapper .coach-img {
+    max-width: 480px;
+  }
+  .main .coach-section .coach-section-content .coach-section-description {
+    width: 100%;
   }
   .main .form-section .form-section-wrapper {
     flex-direction: column;
@@ -1307,19 +1128,6 @@ body {
   .main .form-section .form-section-wrapper .form button {
     width: 100%;
   }
-  .main .review-section .slider-text .slider-item .review-wrapper {
-    flex-direction: column;
-  }
-  .main .review-section .slider-text .slider-item .review-wrapper .review-avatar {
-    width: 85px;
-  }
-  .main .review-section .slider-text .slider-item .review-wrapper .review-text .fb-icon {
-    min-width: 40px;
-    height: 40px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
   .footer .footer-wrapper {
     flex-direction: column;
     gap: 32px;
@@ -1334,6 +1142,12 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .header .header-row .logo {
+    height: 40px;
+  }
+  .main .h2-header {
+    margin-top: 42px;
+  }
   .main .mobile-registration-btn-wrapper {
     display: block;
     transition: all 0.3s;
@@ -1348,6 +1162,7 @@ body {
   }
   .main .introduce-section {
     padding-top: 24px;
+    margin-top: 62px;
   }
   .main .introduce-section .introduce-section-bg {
     background-image: url(images/introduce-section-bg.png);
@@ -1360,18 +1175,21 @@ body {
   .main .introduce-section .logo > img {
     height: 60px;
   }
-  .main .introduce-section .introduce-wrapper .introduce-text-tablet-wrapper .introduce-content-green-text {
-    margin: 16px 0px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-content {
-    margin-right: 0px;
-  }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-subtitle {
     font-size: 21px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-title {
-    font-size: 34px;
+    font-size: 32px;
     margin-top: 16px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-date {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 16px 20px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content button {
     font-family: "Exo 2";
@@ -1380,32 +1198,10 @@ body {
     line-height: 24px;
     width: 100%;
   }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper {
-    width: 100%;
-    max-width: 400px;
-    padding: 16px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-larger {
-    font-size: 26px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-content-subtitle-smaller {
-    font-size: 21px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form {
-    width: 100%;
-    max-width: none;
-    padding: 0px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form .form-input {
-    margin-bottom: 5px;
-    gap: 5px;
-  }
-  .main .introduce-section .introduce-wrapper .introduce-form-wrapper .introduce-form button {
-    margin-top: 5px;
-  }
   .main .demand-section {
     padding-top: 24px;
     padding-bottom: 24px;
+    overflow: hidden;
   }
   .main .demand-section .demand-header {
     margin-bottom: 32px;
@@ -1424,12 +1220,6 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
-  .main .benefit-section .benefit-wrapper .benefit-item {
-    padding: 0px 0px;
-  }
-  .main .benefit-section .benefit-wrapper .benefit-item {
-    width: 100%;
-  }
   .main .who-is-section .who-is-header {
     text-align: left;
   }
@@ -1439,33 +1229,10 @@ body {
   .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
     margin-bottom: 0;
   }
-  .main .who-is-section .who-is-wrapper .who-is-scales {
-    margin-bottom: -24px;
-  }
   .main .who-is-section .who-is-wrapper .who-is-tablet-text {
-    margin-bottom: 32px;
+    margin: 0px;
   }
-  .main .who-is-section .who-is-wrapper .who-is-tablet-btn {
-    width: 100%;
-    font-family: "Exo 2";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .main .how-to-know-section .how-to-know-header {
-    text-align: left;
-  }
-  .main .start-in-it {
-    font-family: "Exo 2";
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: left;
-  }
-  .main .start-in-it p:first-child {
-    margin-bottom: 16px;
-  }
-  .main .start-in-it .start-in-it-btn {
+  .main .who-is-section .who-is-btn {
     width: 100%;
   }
   .main .companies-section {
@@ -1523,25 +1290,6 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #0d1a30;
-  }
-  .main .review-section .review-section-header {
-    padding: 0px 16px;
-  }
-  .main .review-section .slider-text {
-    padding: 0px 16px;
-  }
-  .main .review-section .slider-text .slider-item {
-    margin-right: 16px;
-  }
-  .main .review-section .slider-text .slider-item .video-wrapper .video {
-    max-width: 310px;
-    height: 175px;
-  }
-  .main .review-section .slider-text .slider-item .review-wrapper {
-    max-width: 310px;
-  }
-  .main .review-section .review-section-btn {
-    width: 100%;
   }
   .footer .footer-btn {
     width: 100%;
