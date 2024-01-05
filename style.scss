@@ -36,6 +36,7 @@
 }
 body {
 	color: #0d1a30;
+	font-family: 'Exo 2';
 }
 
 // Desktop
@@ -669,7 +670,7 @@ body {
 		}
 	}
 	.benefits-section {
-		padding-bottom: 104px;
+		padding-bottom: 160px;
 		.check-img {
 			background-image: url(images/check-3-img.svg);
 		}
@@ -685,6 +686,44 @@ body {
 			@include fonts.p2();
 			text-align: center;
 			margin-top: 32px;
+		}
+	}
+	.coach-section {
+		padding-bottom: 100px;
+		.coach-section-content {
+			justify-content: space-between;
+			gap: 30px;
+			.coach-img {
+				width: 40%;
+			}
+			.coach-section-description {
+				width: 50%;
+				.coach-section-content-header {
+					margin-bottom: 30px;
+					@include fonts.h3();
+				}
+				.coach-name {
+					@include fonts.p2();
+					text-align: left;
+					margin-bottom: 20px;
+				}
+				.coach-section-list-item {
+					align-items: flex-start;
+					gap: 16px;
+					margin-bottom: 16px;
+					.coach-section-list-item-number {
+						min-width: 24px;
+						min-height: 24px;
+						background-image: url(images/check-2-img.svg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+					}
+					p {
+						line-height: 145%;
+					}
+				}
+			}
 		}
 	}
 	.form-section {
@@ -855,6 +894,7 @@ body {
 	background: #0d1a30;
 	color: #ffffff;
 	text-align: center;
+	border-top: 1px solid #f0f0f0;
 	.footer-wrapper {
 		justify-content: space-around;
 		@include fonts.t4();
@@ -1079,6 +1119,15 @@ body {
 			}
 			.benefits-footer {
 				margin-top: 24px;
+			}
+		}
+		.coach-section {
+			.coach-section-content {
+				grid-template-columns: 1fr;
+				justify-items: center;
+				.coach-img {
+					justify-self: center;
+				}
 			}
 		}
 		.form-section {
@@ -1318,6 +1367,23 @@ body {
 		.benefits-section {
 			.benefits-footer {
 				text-align: left;
+			}
+		}
+		.coach-section {
+			padding: 48px 0px;
+			.coach-section-content {
+				gap: 30px;
+				.coach-img {
+					width: 221px;
+				}
+				.coach-section-content-header {
+					// @include fonts.mobileH2();
+					margin-bottom: 16px;
+				}
+				.coach-name {
+					// @include fonts.mobileH5();
+					margin-bottom: 18px;
+				}
 			}
 		}
 		.form-section {

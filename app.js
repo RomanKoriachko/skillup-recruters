@@ -25,6 +25,34 @@ if (window.screen.height > 1100) {
 	}
 }
 
+let aboutRecruterBtn = document.querySelector('.header-menu-item-1');
+let programBtn = document.querySelector('.header-menu-item-2');
+let coachBtn = document.querySelector('.header-menu-item-3');
+
+let aboutRecruterSection = document.querySelector('.who-is-section');
+let programSection = document.querySelector('.program-section');
+let coachSection = document.querySelector('.coach-section');
+
+aboutRecruterBtn.addEventListener('click', () => {
+	window.scrollTo({
+		top:
+			aboutRecruterSection.getBoundingClientRect().top + window.scrollY - 100,
+		behavior: 'smooth',
+	});
+});
+programBtn.addEventListener('click', () => {
+	window.scrollTo({
+		top: programSection.getBoundingClientRect().top + window.scrollY - 100,
+		behavior: 'smooth',
+	});
+});
+coachBtn.addEventListener('click', () => {
+	window.scrollTo({
+		top: coachSection.getBoundingClientRect().top + window.scrollY - 100,
+		behavior: 'smooth',
+	});
+});
+
 // Sliders
 
 $(document).ready(function () {

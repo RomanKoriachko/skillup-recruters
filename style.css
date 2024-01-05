@@ -70,6 +70,7 @@ table {
 
 body {
   color: #0d1a30;
+  font-family: "Exo 2";
 }
 
 .header {
@@ -728,7 +729,7 @@ body {
   transform: translateY(10%);
 }
 .main .benefits-section {
-  padding-bottom: 104px;
+  padding-bottom: 160px;
 }
 .main .benefits-section .check-img {
   background-image: url(images/check-3-img.svg);
@@ -751,6 +752,50 @@ body {
   line-height: 32px;
   text-align: center;
   margin-top: 32px;
+}
+.main .coach-section {
+  padding-bottom: 100px;
+}
+.main .coach-section .coach-section-content {
+  justify-content: space-between;
+  gap: 30px;
+}
+.main .coach-section .coach-section-content .coach-img {
+  width: 40%;
+}
+.main .coach-section .coach-section-content .coach-section-description {
+  width: 50%;
+}
+.main .coach-section .coach-section-content .coach-section-description .coach-section-content-header {
+  margin-bottom: 30px;
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 130%;
+}
+.main .coach-section .coach-section-content .coach-section-description .coach-name {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item {
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item .coach-section-list-item-number {
+  min-width: 24px;
+  min-height: 24px;
+  background-image: url(images/check-2-img.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item p {
+  line-height: 145%;
 }
 .main .form-section {
   background: #0d1a30;
@@ -970,6 +1015,7 @@ body {
   background: #0d1a30;
   color: #ffffff;
   text-align: center;
+  border-top: 1px solid #f0f0f0;
 }
 .footer .footer-wrapper {
   justify-content: space-around;
@@ -1183,6 +1229,13 @@ body {
   .main .benefits-section .benefits-footer {
     margin-top: 24px;
   }
+  .main .coach-section .coach-section-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .main .coach-section .coach-section-content .coach-img {
+    justify-self: center;
+  }
   .main .form-section .form-section-wrapper {
     flex-direction: column;
   }
@@ -1390,6 +1443,21 @@ body {
   }
   .main .benefits-section .benefits-footer {
     text-align: left;
+  }
+  .main .coach-section {
+    padding: 48px 0px;
+  }
+  .main .coach-section .coach-section-content {
+    gap: 30px;
+  }
+  .main .coach-section .coach-section-content .coach-img {
+    width: 221px;
+  }
+  .main .coach-section .coach-section-content .coach-section-content-header {
+    margin-bottom: 16px;
+  }
+  .main .coach-section .coach-section-content .coach-name {
+    margin-bottom: 18px;
   }
   .main .form-section .form-section-wrapper {
     gap: 24px;
