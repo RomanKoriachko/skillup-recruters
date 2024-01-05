@@ -9,7 +9,7 @@ if (window.screen.height > 1100) {
 	for (let i = 0; i < mainButtons.length; i++) {
 		mainButtons[i].addEventListener('click', function () {
 			window.scrollTo({
-				top: formSection.getBoundingClientRect().top + window.pageYOffset - 100,
+				top: formSection.getBoundingClientRect().top + window.scrollY - 100,
 				behavior: 'smooth',
 			});
 		});
@@ -18,7 +18,7 @@ if (window.screen.height > 1100) {
 	for (let i = 0; i < mainButtons.length; i++) {
 		mainButtons[i].addEventListener('click', function () {
 			window.scrollTo({
-				top: formSection.getBoundingClientRect().top + window.pageYOffset,
+				top: formSection.getBoundingClientRect().top + window.scrollY - 62,
 				behavior: 'smooth',
 			});
 		});
@@ -69,11 +69,13 @@ const burgerMenuItems = document.querySelectorAll('.burger-menu-item');
 
 burgerMenuBtn.addEventListener('click', () => {
 	burgerMenu.classList.toggle('open');
+	burgerMenuBtn.classList.toggle('open');
 });
 
 for (let i = 0; i < burgerMenuItems.length; i++) {
 	burgerMenuItems[i].addEventListener('click', () => {
 		burgerMenu.classList.remove('open');
+		burgerMenuBtn.classList.remove('open');
 	});
 }
 

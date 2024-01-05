@@ -131,6 +131,10 @@ body {
   background-image: url(images/burger-menu-img.svg);
   height: 24px;
   width: 24px;
+  transition: background 0.2s;
+}
+.header .header-row .burger-menu-btn.open {
+  background-image: url(images/close-img.svg);
 }
 .header .burger-menu-content {
   height: 0px;
@@ -194,22 +198,24 @@ body {
   transition: all 0.3s, ease;
   width: 100%;
 }
-.main .mobile-registration-btn-wrapper > button::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 10px;
-  transition: all 1s ease;
-}
-.main .mobile-registration-btn-wrapper > button:hover::before {
-  box-shadow: 0 0 15px 5px #4ebd09;
-}
 @media (max-width: 750px) {
   .main .mobile-registration-btn-wrapper > button {
     width: 100%;
+  }
+}
+@media (hover: hover) {
+  .main .mobile-registration-btn-wrapper > button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .main .mobile-registration-btn-wrapper > button:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
   }
 }
 .main .br {
@@ -315,22 +321,24 @@ body {
   position: relative;
   transition: all 0.3s, ease;
 }
-.main .introduce-section .introduce-wrapper button::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 10px;
-  transition: all 1s ease;
-}
-.main .introduce-section .introduce-wrapper button:hover::before {
-  box-shadow: 0 0 15px 5px #4ebd09;
-}
 @media (max-width: 750px) {
   .main .introduce-section .introduce-wrapper button {
     width: 100%;
+  }
+}
+@media (hover: hover) {
+  .main .introduce-section .introduce-wrapper button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .main .introduce-section .introduce-wrapper button:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
   }
 }
 .main .demand-section {
@@ -450,22 +458,24 @@ body {
   transition: all 0.3s, ease;
   color: #ffffff;
 }
-.main .who-is-section .who-is-btn::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 10px;
-  transition: all 1s ease;
-}
-.main .who-is-section .who-is-btn:hover::before {
-  box-shadow: 0 0 15px 5px #4ebd09;
-}
 @media (max-width: 750px) {
   .main .who-is-section .who-is-btn {
     width: 100%;
+  }
+}
+@media (hover: hover) {
+  .main .who-is-section .who-is-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .main .who-is-section .who-is-btn:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
   }
 }
 .main .check-img {
@@ -748,22 +758,24 @@ body {
   position: relative;
   transition: all 0.3s, ease;
 }
-.main .sign-up-section .sign-up-btn::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 10px;
-  transition: all 1s ease;
-}
-.main .sign-up-section .sign-up-btn:hover::before {
-  box-shadow: 0 0 15px 5px #4ebd09;
-}
 @media (max-width: 750px) {
   .main .sign-up-section .sign-up-btn {
     width: 100%;
+  }
+}
+@media (hover: hover) {
+  .main .sign-up-section .sign-up-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .main .sign-up-section .sign-up-btn:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
   }
 }
 .main .benefits-section {
@@ -937,22 +949,24 @@ body {
   margin-top: 24px;
   color: #ffffff;
 }
-.main .form-section .form-section-wrapper .form button::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 10px;
-  transition: all 1s ease;
-}
-.main .form-section .form-section-wrapper .form button:hover::before {
-  box-shadow: 0 0 15px 5px #4ebd09;
-}
 @media (max-width: 750px) {
   .main .form-section .form-section-wrapper .form button {
     width: 100%;
+  }
+}
+@media (hover: hover) {
+  .main .form-section .form-section-wrapper .form button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .main .form-section .form-section-wrapper .form button:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
   }
 }
 
@@ -991,22 +1005,24 @@ body {
   transition: all 0.3s, ease;
   margin-bottom: 32px;
 }
-.footer .footer-btn::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 10px;
-  transition: all 1s ease;
-}
-.footer .footer-btn:hover::before {
-  box-shadow: 0 0 15px 5px #4ebd09;
-}
 @media (max-width: 750px) {
   .footer .footer-btn {
     width: 100%;
+  }
+}
+@media (hover: hover) {
+  .footer .footer-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .footer .footer-btn:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
   }
 }
 .footer .footer-buttons button {
