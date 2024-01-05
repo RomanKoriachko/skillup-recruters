@@ -25,33 +25,57 @@ if (window.screen.height > 1100) {
 	}
 }
 
-let aboutRecruterBtn = document.querySelector('.header-menu-item-1');
-let programBtn = document.querySelector('.header-menu-item-2');
-let coachBtn = document.querySelector('.header-menu-item-3');
+let aboutRecruterBtn = document.querySelectorAll('.header-menu-item-1');
+let programBtn = document.querySelectorAll('.header-menu-item-2');
+let coachBtn = document.querySelectorAll('.header-menu-item-3');
 
 let aboutRecruterSection = document.querySelector('.who-is-section');
 let programSection = document.querySelector('.program-section');
 let coachSection = document.querySelector('.coach-section');
 
-aboutRecruterBtn.addEventListener('click', () => {
-	window.scrollTo({
-		top:
-			aboutRecruterSection.getBoundingClientRect().top + window.scrollY - 100,
-		behavior: 'smooth',
+for (let i = 0; i < aboutRecruterBtn.length; i++) {
+	aboutRecruterBtn[i].addEventListener('click', () => {
+		window.scrollTo({
+			top:
+				aboutRecruterSection.getBoundingClientRect().top + window.scrollY - 100,
+			behavior: 'smooth',
+		});
 	});
-});
-programBtn.addEventListener('click', () => {
-	window.scrollTo({
-		top: programSection.getBoundingClientRect().top + window.scrollY - 100,
-		behavior: 'smooth',
+}
+
+for (let i = 0; i < programBtn.length; i++) {
+	programBtn[i].addEventListener('click', () => {
+		window.scrollTo({
+			top: programSection.getBoundingClientRect().top + window.scrollY - 100,
+			behavior: 'smooth',
+		});
 	});
-});
-coachBtn.addEventListener('click', () => {
-	window.scrollTo({
-		top: coachSection.getBoundingClientRect().top + window.scrollY - 100,
-		behavior: 'smooth',
+}
+
+for (let i = 0; i < coachBtn.length; i++) {
+	coachBtn[i].addEventListener('click', () => {
+		window.scrollTo({
+			top: coachSection.getBoundingClientRect().top + window.scrollY - 100,
+			behavior: 'smooth',
+		});
 	});
+}
+
+// Burger menu
+
+const burgerMenuBtn = document.querySelector('.burger-menu-btn');
+const burgerMenu = document.querySelector('.burger-menu-content');
+const burgerMenuItems = document.querySelectorAll('.burger-menu-item');
+
+burgerMenuBtn.addEventListener('click', () => {
+	burgerMenu.classList.toggle('open');
 });
+
+for (let i = 0; i < burgerMenuItems.length; i++) {
+	burgerMenuItems[i].addEventListener('click', () => {
+		burgerMenu.classList.remove('open');
+	});
+}
 
 // Sliders
 

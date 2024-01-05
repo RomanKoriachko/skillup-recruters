@@ -53,7 +53,6 @@ body {
 		display: grid;
 		grid-template-columns: 250px 2fr 300px;
 		align-items: center;
-		// justify-content: space-between;
 		justify-items: center;
 		.logo {
 			justify-self: start;
@@ -84,6 +83,34 @@ body {
 				background: #4ebd0942;
 			}
 		}
+		.burger-menu-btn {
+			display: none;
+			justify-self: flex-end;
+			background-image: url(images/burger-menu-img.svg);
+			height: 24px;
+			width: 24px;
+		}
+	}
+	.burger-menu-content {
+		height: 0px;
+		padding: 0px;
+		opacity: 0;
+		visibility: hidden;
+		text-align: center;
+		transition: padding 0.3s;
+		.burger-menu-item {
+			@include fonts.t1();
+			margin-bottom: 16px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.burger-menu-content.open {
+		height: auto;
+		padding: 16px 0px;
+		opacity: 1;
+		visibility: visible;
 	}
 }
 
@@ -935,6 +962,12 @@ body {
 
 // Laptop
 @media (max-width: 1200px) {
+	.header {
+		.header-row {
+			grid-template-columns: 150px 1fr 300px;
+		}
+	}
+
 	.main {
 		.introduce-section {
 			.logo {
@@ -967,6 +1000,24 @@ body {
 	.container {
 		padding: 0px 16px;
 	}
+
+	.header {
+		.header-row {
+			grid-template-columns: 1fr 1fr;
+			justify-content: space-between;
+			.logo {
+				height: 50px;
+			}
+			.header-menu,
+			.header-btn {
+				display: none;
+			}
+			.burger-menu-btn {
+				display: block;
+			}
+		}
+	}
+
 	.main {
 		.h2-header {
 			@include fonts.h3();
@@ -978,6 +1029,7 @@ body {
 			display: block;
 		}
 		.introduce-section {
+			margin-top: 72px;
 			padding: 48px 0px;
 			.introduce-section-bg {
 				background-image: url(images/introduce-section-bg-2.png);

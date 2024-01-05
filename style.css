@@ -121,6 +121,37 @@ body {
 .header .header-row .header-btn:hover {
   background: rgba(78, 189, 9, 0.2588235294);
 }
+.header .header-row .burger-menu-btn {
+  display: none;
+  justify-self: flex-end;
+  background-image: url(images/burger-menu-img.svg);
+  height: 24px;
+  width: 24px;
+}
+.header .burger-menu-content {
+  height: 0px;
+  padding: 0px;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  transition: padding 0.3s;
+}
+.header .burger-menu-content .burger-menu-item {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.header .burger-menu-content .burger-menu-item:last-child {
+  margin-bottom: 0;
+}
+.header .burger-menu-content.open {
+  height: auto;
+  padding: 16px 0px;
+  opacity: 1;
+  visibility: visible;
+}
 
 .main .h2-header {
   font-family: "Exo 2";
@@ -1072,6 +1103,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .header .header-row {
+    grid-template-columns: 150px 1fr 300px;
+  }
   .main .introduce-section .logo {
     margin-bottom: 30px;
   }
@@ -1090,6 +1124,20 @@ body {
   .container {
     padding: 0px 16px;
   }
+  .header .header-row {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+  .header .header-row .logo {
+    height: 50px;
+  }
+  .header .header-row .header-menu,
+  .header .header-row .header-btn {
+    display: none;
+  }
+  .header .header-row .burger-menu-btn {
+    display: block;
+  }
   .main .h2-header {
     font-family: "Exo 2";
     font-weight: 800;
@@ -1103,6 +1151,7 @@ body {
     display: block;
   }
   .main .introduce-section {
+    margin-top: 72px;
     padding: 48px 0px;
   }
   .main .introduce-section .introduce-section-bg {
