@@ -1060,8 +1060,8 @@ body {
 .footer .footer-buttons .instargam-btn {
   background-image: url(images/Instagram.svg);
 }
-.footer .footer-buttons .youtube-btn {
-  background-image: url(images/Youtube.svg);
+.footer .footer-buttons .telegram-btn {
+  background-image: url(images/telegram.svg);
 }
 
 @media (max-width: 1200px) {
