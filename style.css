@@ -344,7 +344,7 @@ body {
 .main .demand-section {
   padding-top: 60px;
   padding-bottom: 100px;
-  background-color: #f9f9f9;
+  background-color: #efefef;
 }
 .main .demand-section .demand-header {
   margin-bottom: 70px;
@@ -394,6 +394,7 @@ body {
 }
 .main .who-is-section {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .main .who-is-section .who-is-wrapper {
   gap: 32px;
@@ -485,7 +486,12 @@ body {
   margin-right: 8px;
 }
 .main .program-section {
+  padding-top: 40px;
   padding-bottom: 80px;
+  background-color: #efefef;
+}
+.main .program-section .program-section-header {
+  margin-top: 0;
 }
 .main .program-section .check-img {
   background-image: url(images/check-2-img.svg);
@@ -780,7 +786,12 @@ body {
   }
 }
 .main .benefits-section {
-  padding-bottom: 160px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #efefef;
+}
+.main .benefits-section .benefits-header {
+  margin-top: 0;
 }
 .main .benefits-section .check-img {
   background-image: url(images/check-3-img.svg);
@@ -805,6 +816,7 @@ body {
   margin-top: 32px;
 }
 .main .coach-section {
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 .main .coach-section .coach-section-content {
@@ -1389,6 +1401,9 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+  }
+  .main .benefits-section {
+    padding-top: 40px;
   }
   .main .benefits-section .benefits-footer {
     text-align: left;

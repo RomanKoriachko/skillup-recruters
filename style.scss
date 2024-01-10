@@ -260,7 +260,7 @@ body {
 	.demand-section {
 		padding-top: 60px;
 		padding-bottom: 100px;
-		background-color: #f9f9f9;
+		background-color: #efefef;
 		.demand-header {
 			margin-bottom: 70px;
 			@include fonts.h2();
@@ -321,6 +321,7 @@ body {
 	// }
 	.who-is-section {
 		padding-top: 60px;
+		padding-bottom: 60px;
 		.who-is-wrapper {
 			gap: 32px;
 			align-items: center;
@@ -445,7 +446,12 @@ body {
 	// 	}
 	// }
 	.program-section {
+		padding-top: 40px;
 		padding-bottom: 80px;
+		background-color: #efefef;
+		.program-section-header {
+			margin-top: 0;
+		}
 		.check-img {
 			background-image: url(images/check-2-img.svg);
 		}
@@ -658,7 +664,12 @@ body {
 		}
 	}
 	.benefits-section {
-		padding-bottom: 160px;
+		padding-top: 100px;
+		padding-bottom: 80px;
+		background-color: #efefef;
+		.benefits-header {
+			margin-top: 0;
+		}
 		.check-img {
 			background-image: url(images/check-3-img.svg);
 		}
@@ -677,6 +688,7 @@ body {
 		}
 	}
 	.coach-section {
+		padding-top: 80px;
 		padding-bottom: 100px;
 		.coach-section-content {
 			justify-content: space-between;
@@ -1377,6 +1389,7 @@ body {
 			}
 		}
 		.benefits-section {
+			padding-top: 40px;
 			.benefits-footer {
 				text-align: left;
 			}
