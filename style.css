@@ -392,21 +392,20 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
+.main .who-is-section {
+  padding-top: 60px;
+}
 .main .who-is-section .who-is-wrapper {
   gap: 32px;
   align-items: center;
 }
+.main .who-is-section .who-is-wrapper .who-is-header {
+  margin-top: 0;
+}
 .main .who-is-section .who-is-wrapper .who-is-text {
   width: 50%;
 }
-.main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
-  font-family: "Exo 2";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 24px;
-}
-.main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
+.main .who-is-section .who-is-wrapper .who-is-text .who-is-text-item {
   font-family: "Exo 2";
   font-weight: 500;
   font-size: 18px;
@@ -418,6 +417,7 @@ body {
 }
 .main .who-is-section .who-is-wrapper .who-is-img-wrapper > img {
   width: 100%;
+  max-width: 480px;
 }
 .main .who-is-section .who-is-wrapper .who-is-tablet-content {
   display: none;
@@ -671,6 +671,7 @@ body {
 .main .numbers-section .numbers-header {
   margin-left: 170px;
   margin-right: 170px;
+  text-align: center;
 }
 .main .numbers-section .numbers-row {
   margin-bottom: 32px;
@@ -1346,6 +1347,9 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
+  .main .who-is-section {
+    padding-top: 40px;
+  }
   .main .who-is-section .who-is-header {
     text-align: left;
   }
@@ -1375,6 +1379,9 @@ body {
     width: 160px;
     height: 160px;
     margin-right: 10px;
+  }
+  .main .numbers-section .numbers-header {
+    font-size: 26px;
   }
   .main .sign-up-section button {
     width: 100%;

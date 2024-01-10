@@ -320,16 +320,16 @@ body {
 	// 	}
 	// }
 	.who-is-section {
+		padding-top: 60px;
 		.who-is-wrapper {
 			gap: 32px;
 			align-items: center;
+			.who-is-header {
+				margin-top: 0;
+			}
 			.who-is-text {
 				width: 50%;
-				> p:nth-child(1) {
-					@include fonts.t2();
-					margin-bottom: 24px;
-				}
-				> p:nth-child(2) {
+				.who-is-text-item {
 					@include fonts.t2();
 					margin-bottom: 24px;
 				}
@@ -338,6 +338,7 @@ body {
 				width: 50%;
 				> img {
 					width: 100%;
+					max-width: 480px;
 				}
 			}
 			// .who-is-scales {
@@ -595,6 +596,7 @@ body {
 		.numbers-header {
 			margin-left: 170px;
 			margin-right: 170px;
+			text-align: center;
 		}
 		.numbers-row {
 			margin-bottom: 32px;
@@ -1307,6 +1309,7 @@ body {
 		// 	}
 		// }
 		.who-is-section {
+			padding-top: 40px;
 			.who-is-header {
 				text-align: left;
 			}
@@ -1360,6 +1363,11 @@ body {
 					height: 160px;
 					margin-right: 10px;
 				}
+			}
+		}
+		.numbers-section {
+			.numbers-header {
+				font-size: 26px;
 			}
 		}
 		.sign-up-section {
