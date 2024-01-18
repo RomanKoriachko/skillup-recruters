@@ -1,23 +1,6 @@
 @use 'reset';
 @use 'fonts';
 
-// @mixin mainButton() {
-// 	width: 380px;
-// 	min-height: 50px;
-// 	background: #4ebd09;
-// 	border-radius: 6px;
-// 	border: none;
-// 	padding: 5px 12px;
-// 	cursor: pointer;
-// 	@include fonts.b1();
-// 	transition: transform 0.3s;
-// 	overflow: hidden;
-// 	box-shadow: none;
-// 	&:hover {
-// 		transform: translateY(10%);
-// 	}
-// }
-
 @mixin mainButton() {
 	width: 430px;
 	min-height: 50px;
@@ -261,6 +244,7 @@ body {
 		padding-top: 60px;
 		padding-bottom: 100px;
 		background-color: #efefef;
+		overflow: hidden;
 		.demand-header {
 			margin-bottom: 70px;
 			@include fonts.h2();
@@ -298,27 +282,6 @@ body {
 			@include fonts.t2();
 		}
 	}
-	// .benefit-section {
-	// 	.benefit-wrapper {
-	// 		gap: 24px;
-	// 		.benefit-item {
-	// 			width: 410px;
-	// 			padding: 0px 16px;
-	// 			text-align: center;
-	// 			> img {
-	// 				margin-bottom: 12px;
-	// 			}
-	// 			.benefit-item-title {
-	// 				@include fonts.t1();
-	// 				margin-bottom: 25px;
-	// 			}
-	// 			.benefit-item-subtitle {
-	// 				@include fonts.t2();
-	// 				text-align: left;
-	// 			}
-	// 		}
-	// 	}
-	// }
 	.who-is-section {
 		padding-top: 60px;
 		padding-bottom: 60px;
@@ -1053,16 +1016,6 @@ body {
 				// width: 500px;
 			}
 		}
-		// .benefit-section {
-		// 	.benefit-wrapper {
-		// 		flex-direction: column;
-		// 		align-items: center;
-		// 		gap: 32px;
-		// 		.benefit-item {
-		// 			width: 450px;
-		// 		}
-		// 	}
-		// }
 		.who-is-section {
 			.who-is-wrapper {
 				flex-direction: column;
@@ -1088,12 +1041,6 @@ body {
 				}
 			}
 		}
-		// .how-to-know-section {
-		// 	padding-bottom: 48px;
-		// 	.how-to-know-wrapper {
-		// 		grid-template-columns: 1fr;
-		// 	}
-		// }
 		.program-section {
 			padding-bottom: 30px;
 			.program-section-header {
@@ -1180,27 +1127,6 @@ body {
 				}
 			}
 		}
-		// .review-section {
-		// 	.slider-text {
-		// 		.slider-item {
-		// 			.review-wrapper {
-		// 				flex-direction: column;
-		// 				.review-avatar {
-		// 					width: 85px;
-		// 				}
-		// 				.review-text {
-		// 					.fb-icon {
-		// 						min-width: 40px;
-		// 						height: 40px;
-		// 						background-position: center;
-		// 						background-repeat: no-repeat;
-		// 						background-size: contain;
-		// 					}
-		// 				}
-		// 			}
-		// 		}
-		// 	}
-		// }
 	}
 	.footer {
 		.footer-wrapper {
@@ -1289,7 +1215,6 @@ body {
 		.demand-section {
 			padding-top: 24px;
 			padding-bottom: 24px;
-			overflow: hidden;
 			.demand-header {
 				margin-bottom: 32px;
 			}
@@ -1310,16 +1235,6 @@ body {
 				}
 			}
 		}
-		// .benefit-section {
-		// 	.benefit-wrapper {
-		// 		.benefit-item {
-		// 			padding: 0px 0px;
-		// 		}
-		// 		.benefit-item {
-		// 			width: 100%;
-		// 		}
-		// 	}
-		// }
 		.who-is-section {
 			padding-top: 40px;
 			.who-is-header {
@@ -1345,21 +1260,6 @@ body {
 				width: 100%;
 			}
 		}
-		// .how-to-know-section {
-		// 	.how-to-know-header {
-		// 		text-align: left;
-		// 	}
-		// }
-		// .start-in-it {
-		// 	@include fonts.p2();
-		// 	text-align: left;
-		// 	p:first-child {
-		// 		margin-bottom: 16px;
-		// 	}
-		// 	.start-in-it-btn {
-		// 		width: 100%;
-		// 	}
-		// }
 		.companies-section {
 			padding-top: 48px;
 			padding-bottom: 48px;
@@ -1426,29 +1326,6 @@ body {
 				}
 			}
 		}
-		// .review-section {
-		// 	.review-section-header {
-		// 		padding: 0px 16px;
-		// 	}
-		// 	.slider-text {
-		// 		padding: 0px 16px;
-		// 		.slider-item {
-		// 			margin-right: 16px;
-		// 			.video-wrapper {
-		// 				.video {
-		// 					max-width: 310px;
-		// 					height: 175px;
-		// 				}
-		// 			}
-		// 			.review-wrapper {
-		// 				max-width: 310px;
-		// 			}
-		// 		}
-		// 	}
-		// 	.review-section-btn {
-		// 		width: 100%;
-		// 	}
-		// }
 	}
 	.footer {
 		.footer-btn {
